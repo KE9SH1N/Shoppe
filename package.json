@@ -1,0 +1,16 @@
+{
+  "name": "shoppe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --minify."
+  },
+  "author": "Mawn",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .ct-container{
+        @apply xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] xs:max-w-[576px] 2xs:max-w-[320px] mx-auto relative z-[1];
+    }
+    .ct-flex-center{
+        @apply flex items-center justify-center;
+    }
+    .ct-flex-between{
+        @apply flex items-center justify-between;
+    }
+    .ct-flex-start{
+        @apply flex items-center justify-start;
+    }
+    .ct-flex-end{
+        @apply flex items-center justify-end;
+    }
+    .ct-flex-around{
+        @apply flex items-center justify-around;
+    }
+    .ct-flex-evenly{
+        @apply flex items-center justify-evenly;
+    }
+}
+
+@layer base{
+    @font-face {
+        font-family: "Allerta Stencil";
+        src: url("../assets/fonts/AllertaStencil-Regular.ttf") format("ttf");
+    }
+    @font-face {
+        font-family: "DM Sans";
+        src: url("../assets/fonts/DMSans-Regular.ttf") format("ttf");
+    }
+}
