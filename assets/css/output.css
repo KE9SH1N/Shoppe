@@ -758,6 +758,14 @@ video {
   margin-top: 2.25rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -812,6 +820,14 @@ video {
 
 .w-\[40\%\] {
   width: 40%;
+}
+
+.w-\[35\%\] {
+  width: 35%;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-3 {
@@ -963,6 +979,10 @@ video {
   padding-bottom: 26px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-DM {
   font-family: DM Sans, sans-serif;
 }
@@ -989,6 +1009,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-normal {
