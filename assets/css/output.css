@@ -943,6 +943,26 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-\[25px\] {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.py-\[24px\] {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-\[26px\] {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
 .font-DM {
   font-family: DM Sans, sans-serif;
 }
@@ -1009,4 +1029,21 @@ video {
 .text-dark-gray {
   --tw-text-opacity: 1;
   color: rgb(112 112 112 / var(--tw-text-opacity));
+}
+
+.active\:border-b:active {
+  border-bottom-width: 1px;
+}
+
+.active\:border-b-2:active {
+  border-bottom-width: 2px;
+}
+
+.active\:border-solid:active {
+  border-style: solid;
+}
+
+.active\:border-dark-gray:active {
+  --tw-border-opacity: 1;
+  border-color: rgb(112 112 112 / var(--tw-border-opacity));
 }
