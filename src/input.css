@@ -25,6 +25,9 @@
     .ct-flex-evenly{
         @apply flex items-center justify-evenly;
     }
+    .smooth-hover-animation{
+        @apply transition-all duration-300 ease-in-out;
+    }
 }
 
 @layer base{
