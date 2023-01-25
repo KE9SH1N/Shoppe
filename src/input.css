@@ -31,6 +31,14 @@
     .smooth-hover-animation-mid{
         @apply transition-all duration-500 ease-in-out;
     }
+
+    input:checked + label{
+        @apply bg-accent;
+    }
+
+    input:checked + label::before{
+        @apply left-[18px];
+    }
 }
 
 @layer base{
