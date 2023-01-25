@@ -1,6 +1,9 @@
 const rangeInput = document.querySelectorAll(".range-input input"),
 range = document.querySelector(".slider .progress");
-let priceGap = 1000;
+let priceGap = 100;
+
+document.getElementById('min').innerHTML ="$" + rangeInput[0].value;
+document.getElementById('max').innerHTML ="$" + rangeInput[1].value;
 
 rangeInput.forEach(input =>{
     input.addEventListener("input", e =>{
@@ -14,8 +17,12 @@ rangeInput.forEach(input =>{
                 rangeInput[1].value = minVal + priceGap;
             }
         }else{
-            range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+            range.style.left =((minVal / rangeInput[0].max) * 100) + "%";
             range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+
+            document.getElementById('min').innerHTML ="$" + minVal;
+            document.getElementById('max').innerHTML ="$" + maxVal;
         }
     });
 });
+

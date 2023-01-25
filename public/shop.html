@@ -87,16 +87,20 @@
                                 <div class="progress"></div>
                             </div>
                             <div class="range-input">
-                                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                <input type="range" class="range-min" min="0" max="1000" value="250" step="10">
+                                <input type="range" class="range-max" min="0" max="1000" value="750" step="10">
                             </div>
                         </div>
                         <div class="ct-flex-between">
-                            <p class="text-sm text-dark-gray capitalize">price: <span>$40</span> - <span>$180</span></p>
-                            <a href="#" class="text-sm text-accent capitalize">filter</a>
+                            <div class="text-sm font-medium text-dark-gray capitalize ct-flex-center"><span>price:&nbsp</span>  
+                                <p id="min"></p>
+                                <span>&nbsp-&nbsp</span>
+                                <p id="max"></p>
+                            </div>
+                            <a href="#" class="font-medium text-sm text-accent capitalize hover:text-black smooth-hover-animation">filter</a>
                         </div>
                     </div>
-                    <div class="ct-flex-between">
+                    <div class="ct-flex-between mt-10">
                         <p class="capitalize">on sale</p>
                         <div>
                             <input class=" hidden" type="checkbox" id="toggle-switch-sale">
@@ -106,7 +110,7 @@
                         </div>
                         
                     </div>
-                    <div class="ct-flex-between">
+                    <div class="ct-flex-between mt-10">
                         <p class="capitalize">in stock</p>
                         <div>
                             <input class=" hidden" type="checkbox" id="toggle-switch-sort" checked>
