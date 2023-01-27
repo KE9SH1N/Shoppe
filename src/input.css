@@ -33,12 +33,18 @@
     }
 
     /* TOGGLE SWITCH  */
-    input:checked + label{
+    .toggle-switch input:checked + label{
         @apply bg-accent;
     }
 
-    input:checked + label::before{
+    .toggle-switch input:checked + label::before{
         @apply left-[18px];
+    }
+
+    /* TOGGLE REVIEW STAR  */
+
+    .rate input:checked + label i{
+        @apply bg-accent;
     }
 
     /* PRICE RANGE  */
