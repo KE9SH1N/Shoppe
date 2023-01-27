@@ -849,12 +849,24 @@ input[type="range"]::-moz-range-thumb{
   margin-top: 6rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-\[6px\] {
+  margin-top: 6px;
+}
+
 .block {
   display: block;
 }
 
 .inline-block {
   display: inline-block;
+}
+
+.flex {
+  display: flex;
 }
 
 .grid {
@@ -871,6 +883,14 @@ input[type="range"]::-moz-range-thumb{
 
 .h-\[20px\] {
   height: 20px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[120px\] {
+  height: 120px;
 }
 
 .w-80 {
@@ -909,6 +929,38 @@ input[type="range"]::-moz-range-thumb{
   width: 80%;
 }
 
+.w-\[540px\] {
+  width: 540px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
+.w-\[65\%\] {
+  width: 65%;
+}
+
+.w-\[55\%\] {
+  width: 55%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -925,8 +977,24 @@ input[type="range"]::-moz-range-thumb{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-start {
   align-items: flex-start;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .gap-x-7 {
@@ -952,6 +1020,34 @@ input[type="range"]::-moz-range-thumb{
   row-gap: 1rem;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-\[4px\] {
   border-radius: 4px;
 }
@@ -966,6 +1062,10 @@ input[type="range"]::-moz-range-thumb{
 
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border-2 {
@@ -1060,6 +1160,11 @@ input[type="range"]::-moz-range-thumb{
 .py-\[2px\] {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .text-center {
