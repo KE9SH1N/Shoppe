@@ -41,6 +41,10 @@
         @apply left-[18px];
     }
 
+    /* CHECKBOX COLOR */
+    
+    
+
     /* TOGGLE REVIEW STAR  */
 
     .rate input:checked + label i{
