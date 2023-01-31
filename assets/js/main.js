@@ -16,7 +16,7 @@ const tabs = document.querySelectorAll(".tab");
 
 const indicator = document.querySelector(".indicator");
 
-const panels = document.querySelectorAll(".tab-panel")
+const panels = document.querySelectorAll(".tab-panel");
 // console.log(panels);
 
 indicator.style.width = tabs[0].getBoundingClientRect().width + 'px'
@@ -41,3 +41,5 @@ tabs.forEach(tab => {
         })
     })
 })
+
+

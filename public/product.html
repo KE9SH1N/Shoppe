@@ -112,18 +112,18 @@
             </div>
         </section>
         <section class="container ct-container mt-16">
-            <nav class="py-8 border-b border-solid border-light-gray">
+            <nav class="py-8 border-b border-solid border-light-gray" id="productDetails">
                 <ul class="ct-flex-start gap-x-24 capitalize text-xl text-dark-gray">
-                    <li><a href="#" class="hover:text-black smooth-hover-animation">description</a></li>
-                    <li><a href="#" class="hover:text-black smooth-hover-animation">Aditional information</a></li>
-                    <li><a href="#" class="hover:text-black smooth-hover-animation">review<span>(0)</span></a></li>
+                    <li><button role="tab" aria-selected="true" aria-controls="description" class="hover:text-black smooth-hover-animation capitalize">description</button></li>
+                    <li><button role="tab" aria-selected="false" aria-controls="information" class="hover:text-black smooth-hover-animation capitalize">Aditional information</button></li>
+                    <li><button role="tab" aria-selected="false" aria-controls="review" class="hover:text-black smooth-hover-animation capitalize">review<span>(0)</span></button></li>
                 </ul>
             </nav>
-            <div class="mt-10">
+            <div class="mt-10 section-panel" id="description">
                 <p class="text-dark-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. 
                     Morbi porta tempor odio, in molestie diam bibendum sed.</p>
             </div>
-            <div class="mt-10 hidden">
+            <div class="mt-10 hidden section-panel" id="information">
                 <ul class="capitalize flex flex-col gap-y-3">
                     <li>weight: <span class="text-dark-gray">0.3 kg</span></li>
                     <li>dimention: <span class="text-dark-gray">15x 10 x 1 cm</span></li>
@@ -131,7 +131,7 @@
                     <li>material: <span class="text-dark-gray">metal</span></li>
                 </ul>
             </div>
-            <div class="mt-10 hidden">
+            <div class="mt-10 hidden section-panel" id="review">
                 <div class="ct-flex-start items-start gap-x-20">
                     <div class="w-[50%]">
                         <h3 class="text-xl">2 Reviews for lira earings</h3>
@@ -229,7 +229,6 @@
                 </div>
             </div>
         </section>
-
         <section class="container ct-container mt-16">
             <div class="ct-flex-between">
                 <h2 class="text-2xl capitalize">similar items</h2>
@@ -327,5 +326,7 @@
             </div>    
         </div>
     </footer>
+
+    <script src="../assets/js/nav-menu.js"></script>
 </body>
 </html>
