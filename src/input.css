@@ -106,6 +106,16 @@
         @apply border-b-2 border-solid border-dark-gray;
     }
 
+
+    /* HOVER ON PRODUCT ITEMS  */
+
+    .ct-content:hover .overlay{
+        height: 18%;
+    }
+
+
+
+
     /* .range-input{
         @apply relative;
     }
