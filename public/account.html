@@ -53,39 +53,99 @@
     </header>
 
     <main>
-        <div class="container ct-container text-center ct-flex-center my-32">
-            <div class="m-auto">
+        <div class="container ct-container flex-col mt-20 mb-60">
+            <div class="m-auto text-center">
                 <h2 class=" text-4xl font-medium capitalize">My Account</h2>
-                <div class="mt-16 p-1 bg-light-gray text-start rounded-lg">
-                    <button class="py-3 px-[88px] bg-white rounded-lg">Sign in</button>
-                    <button class="py-3 px-[88px] rounded-lg">Register</button>
-                </div>
-                <div class="mt-20">
-                    <form action="#">
-                        <div class="grid grid-cols-1 gap-y-10">
-                            
-                            <div class="relative">
-                                <label for="email"></label>
-                                <input type="email" placeholder="email" id="email" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
-                                <i class="hidden fa-regular fa-circle-xmark absolute right-[20%] top-[40%] text-black cursor-pointer"></i>
-                            </div>
-                            <div class="relative">
-                                <label for="password"></label>
-                                <input type="password" placeholder="password" id="password" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
-                            </div>
-
-                            <div class="text-start">
-                                <input class="align-middle"
-                                    type="checkbox" id="checkBox" name="checkbox">
-                                <label class="ml-2 text-xs text-dark-gray cursor-pointer"
-                                    for="checkBox">Remember Me</label>
-                            </div>
-                        </div>
-                        <button type="submit" class="font-bold px-44 py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">sign in</button>
-                        <a href="forget-password.html" class="mt-3 block capitalize">have you forgotten your password?</a>
-                    </form>
-                </div>
             </div>
+            <div class="mt-5 w-[60%] mx-auto text-center">
+                    <div class="relative mt-16 bg-light-gray rounded-lg mx-auto grid grid-cols-2 items-center p-2 overflow-hidden transition">
+                        <div class="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-lg bg-white shadow-md">
+                        </div>
+                        <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0"
+                            class="relative block h-10 px-6 tab rounded-lg">
+                            <span class="text-gray-800 capitalize">Sign in</span>
+                        </button>
+                        <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1"
+                            class="relative block h-10 px-6 tab rounded-lg">
+                            <span class="text-gray-800 capitalize">register</span>
+                        </button>
+                    </div>
+                    <div class="mt-10 relative">
+                        <div role="tabpanel" id="panel-1" class="tab-panel transition duration-300">
+                            <form action="#">
+                                <div class="grid grid-cols-1 gap-y-10">
+                                    
+                                    <div class="relative">
+                                        <label for="email"></label>
+                                        <input type="email" placeholder="email" id="email2" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                        <i class="hidden fa-regular fa-circle-xmark absolute right-[20%] top-[40%] text-black cursor-pointer"></i>
+                                    </div>
+                                    <div class="relative">
+                                        <label for="password"></label>
+                                        <input type="password" placeholder="password" id="password2" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                    </div>
+
+                                    <div class="text-start">
+                                        <input class="align-middle"
+                                            type="checkbox" id="checkBox2" name="checkbox">
+                                        <label class="ml-2 text-xs text-dark-gray cursor-pointer"
+                                            for="checkBox">Remember Me</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="font-bold px-44 py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">sign in</button>
+                                <a href="forget-password.html" class="mt-3 block capitalize">have you forgotten your password?</a>
+                            </form>
+                        </div>
+
+                        <div role="tabpanel" id="panel-2" class="w-full absolute top-0 invisible opacity-0 tab-panel transition duration-300">
+                            
+                            <form action="#">
+                                <div class="grid grid-cols-2 gap-y-10 gap-x-10">
+                                    <div class="relative">
+                                        <label for="firstName"></label>
+                                        <input type="text" placeholder="First Name" id="firstName" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                        <i class="hidden fa-regular fa-circle-xmark absolute right-[20%] top-[40%] text-black cursor-pointer"></i>
+                                    </div>
+
+                                    <div class="relative">
+                                        <label for="lastName"></label>
+                                        <input type="text" placeholder="Last Name" id="lastName" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                        <i class="hidden fa-regular fa-circle-xmark absolute right-[20%] top-[40%] text-black cursor-pointer"></i>
+                                    </div>
+
+                                    <div class="relative">
+                                        <label for="email"></label>
+                                        <input type="email" placeholder="email" id="email" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                        <i class="hidden fa-regular fa-circle-xmark absolute right-[20%] top-[40%] text-black cursor-pointer"></i>
+                                    </div>
+                                    <div class="relative">
+                                        <label for="confirmPassword"></label>
+                                        <input type="password" placeholder="confirm password" id="confirmPassword" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                    </div>
+                                    <div class="relative">
+                                        <label for="password"></label>
+                                        <input type="password" placeholder="password" id="password" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                    </div>
+                                    <div class="relative">
+                                        <label for="contact"></label>
+                                        <input type="tel" placeholder="Phone number" id="contact" class="w-full py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                        <i class="hidden fa-regular fa-circle-xmark absolute right-[20%] top-[40%] text-black cursor-pointer"></i>
+                                    </div>
+
+                                    <div class="text-start col-start-3 col-end-1">
+                                        <input class="align-middle"
+                                            type="checkbox" id="checkBox" name="checkbox">
+                                        <label class="ml-2 text-xs text-dark-gray cursor-pointer"
+                                            for="checkBox">Remember Me</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="font-bold px-44 py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">sign up</button>
+                                <a href="account.html" class="mt-3 block capitalize">already have an account ?</a>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+                
         </div>
     </main>
 
@@ -133,5 +193,7 @@
             </div>    
         </div>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
