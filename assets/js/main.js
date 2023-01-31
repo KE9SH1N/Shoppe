@@ -6,6 +6,6 @@ const navLinks = document.querySelector('nav').querySelectorAll("a").
 
 forEach(link=>{
     if(link.href.includes(`${activePage}`)){
-        link.classList.add('active');
+        link.classList.add('ct-active');
     }
 })
