@@ -102,7 +102,7 @@
 
     /* ACTIVE CLASS STATUS  */
 
-    .ct-active{
+    .active{
         @apply border-b-2 border-solid border-dark-gray;
     }
 
