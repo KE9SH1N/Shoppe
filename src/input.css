@@ -110,7 +110,7 @@
     /* HOVER ON PRODUCT ITEMS  */
 
     .ct-content:hover .overlay{
-        height: 18%;
+        @apply h-[18%];
     }
 
 
