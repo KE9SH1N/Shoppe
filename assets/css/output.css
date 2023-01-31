@@ -1020,8 +1020,8 @@ input[type="range"]::-moz-range-thumb{
   width: 35%;
 }
 
-.w-\[70\%\] {
-  width: 70%;
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .w-full {
@@ -1034,10 +1034,6 @@ input[type="range"]::-moz-range-thumb{
 
 .w-\[80\%\] {
   width: 80%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
 }
 
 .w-\[540px\] {
@@ -1307,6 +1303,11 @@ input[type="range"]::-moz-range-thumb{
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .px-2 {
