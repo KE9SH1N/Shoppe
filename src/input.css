@@ -103,7 +103,7 @@
     /* ACTIVE CLASS STATUS  */
 
     .ct-active{
-        @apply border-b-2 border-solid border-dark-gray;
+        @apply border-b-2 border-solid border-dark-gray !important;
     }
 
 

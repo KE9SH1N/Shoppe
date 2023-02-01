@@ -741,10 +741,10 @@ input[type="range"]::-moz-range-thumb{
 /* ACTIVE CLASS STATUS  */
 
 .ct-active {
-  border-bottom-width: 2px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(112 112 112 / var(--tw-border-opacity));
+  border-bottom-width: 2px !important;
+  border-style: solid !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(112 112 112 / var(--tw-border-opacity)) !important;
 }
 
 /* HOVER ON PRODUCT ITEMS  */
@@ -1220,6 +1220,10 @@ input[type="range"]::-moz-range-thumb{
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .bg-light-gray {

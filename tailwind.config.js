@@ -43,6 +43,7 @@ module.exports = {
       'gray':'#D8D8D8',
       'light-gray':'#EFEFEF',
       'error':'#D82700',
+      'transparent':'transparent',
     },
     fontFamily:{
       DM:['DM Sans', 'sans-serif'],
