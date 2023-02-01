@@ -90,3 +90,18 @@ optionalImages.forEach(image =>{
         mainImage.src = image.src;        
     })
 })
+
+
+// ADD TO CART PROMPT MESSAGE 
+
+// selecting html button element by id 
+const addToCartBtn = document.querySelector('#addToCart');
+const cartMessage = document.querySelector('#cartMessage');
+
+addToCartBtn.addEventListener('click', (e)=>{
+    cartMessage.classList.remove("hidden");
+    setTimeout(function(){
+        cartMessage.classList.add("hidden");
+    },3000)
+    
+})

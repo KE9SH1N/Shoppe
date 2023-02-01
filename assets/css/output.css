@@ -1254,6 +1254,10 @@ input[type="range"]::-moz-range-thumb{
   border-bottom-width: 1px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1275,6 +1279,11 @@ input[type="range"]::-moz-range-thumb{
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-accent {
+  --tw-border-opacity: 1;
+  border-color: rgb(161 138 104 / var(--tw-border-opacity));
 }
 
 .bg-light-gray {
@@ -1322,6 +1331,10 @@ input[type="range"]::-moz-range-thumb{
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .py-4 {
@@ -1389,12 +1402,21 @@ input[type="range"]::-moz-range-thumb{
   padding-bottom: 2px;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
 
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-center {
