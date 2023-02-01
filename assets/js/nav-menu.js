@@ -50,3 +50,13 @@ decrement.addEventListener('click', ()=>{
         quantity.innerHTML = tempQuantity;
     }
 })
+
+
+const mainImage = document.querySelector("#largeImg");
+const optionalImages = document.querySelectorAll(".small-img");
+
+optionalImages.forEach(image =>{
+    image.addEventListener('click', ()=>{
+        mainImage.src = image.src;        
+    })
+})
