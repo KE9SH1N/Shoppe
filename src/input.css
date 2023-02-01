@@ -42,6 +42,16 @@
     }
 
     /* CHECKBOX COLOR */
+    
+
+    /* SWIPER SLIDER CUSTOM PAGINATION */
+
+    .swiper-pagination .swiper-pagination-bullet{
+        @apply bg-[#ffffff] opacity-100;
+    }
+    .swiper-pagination .swiper-pagination-bullet-active{
+        @apply w-[15px] h-[15px] rounded-[50%] border border-solid border-white bg-transparent !important;
+    }
 
     
 

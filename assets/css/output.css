@@ -677,6 +677,25 @@ video {
 
 /* CHECKBOX COLOR */
 
+/* SWIPER SLIDER CUSTOM PAGINATION */
+
+.swiper-pagination .swiper-pagination-bullet {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  height: 15px !important;
+  width: 15px !important;
+  border-radius: 50% !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
+  background-color: transparent !important;
+}
+
 /* TOGGLE REVIEW STAR  */
 
 .rate input:checked + label i {
