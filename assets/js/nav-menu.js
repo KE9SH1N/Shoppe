@@ -29,15 +29,24 @@ projectDetailsMenus.forEach(menu => {
     })
 })
 
-// projectDetailsMenus.forEach(menu =>{
-//     menu.addEventListener("click", ()=>{
-//         let menuNav = menu.getAttribute("id");
-//         console.log(menu);
-//         if(menuNav === menu.getAttribute("id")){
-//             menu.classList.add("ct-active");
-//         }
-//         else{
-//             menu.classList.remove("ct-active");
-//         }
-//     })
-// })
+
+const decrement = document.querySelector('#minusQuantity');
+const increment = document.querySelector('#plusQuantity');
+const quantity = document.querySelector('#quantity');
+
+let tempQuantity = 1;
+
+increment.addEventListener('click', ()=>{
+    tempQuantity++;
+    tempQuantity = (tempQuantity < 10) ? "0" + tempQuantity : tempQuantity;
+    console.log(tempQuantity);
+    quantity.innerHTML = tempQuantity;
+})
+
+decrement.addEventListener('click', ()=>{
+    if(tempQuantity > 1){
+        tempQuantity--;
+        tempQuantity = (tempQuantity < 10) ? "0" + tempQuantity : tempQuantity;
+        quantity.innerHTML = tempQuantity;
+    }
+})

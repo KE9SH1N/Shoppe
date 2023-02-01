@@ -1067,6 +1067,18 @@ input[type="range"]::-moz-range-thumb{
   width: 33.33px;
 }
 
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
 .-translate-x-\[50\%\] {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1197,6 +1209,10 @@ input[type="range"]::-moz-range-thumb{
   border-radius: 20px;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -1265,12 +1281,21 @@ input[type="range"]::-moz-range-thumb{
   background-color: rgb(161 138 104 / var(--tw-bg-opacity));
 }
 
+.bg-dark-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(112 112 112 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-4 {
@@ -1336,6 +1361,24 @@ input[type="range"]::-moz-range-thumb{
 .py-\[2px\] {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-center {
