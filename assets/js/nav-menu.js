@@ -99,9 +99,9 @@ const addToCartBtn = document.querySelector('#addToCart');
 const cartMessage = document.querySelector('#cartMessage');
 
 addToCartBtn.addEventListener('click', (e)=>{
-    cartMessage.classList.remove("hidden");
-    setTimeout(function(){
-        cartMessage.classList.add("hidden");
-    },3000)
-    
-})
+
+        cartMessage.classList.remove("hidden")
+        setTimeout(function(){
+            cartMessage.classList.add("hidden");
+        },4000)
+    })
