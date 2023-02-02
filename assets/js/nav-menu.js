@@ -7,9 +7,8 @@ const panels = document.querySelectorAll(".section-panel")
 projectDetailsMenus.forEach(menu => {
     menu.addEventListener("click", ()=>{
         let menuTarget = menu.getAttribute("aria-controls");
-        let menuId = menu.getAttribute("id");
-        // clicked target id = navmenu item id 
-        if(event.target.id === menuId){
+        let menuId = menu.getAttribute("id"); 
+        if(menuId){
             // for every item 
             projectDetailsMenus.forEach((item)=>{
                 // reset active class 
