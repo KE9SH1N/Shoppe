@@ -1286,6 +1286,11 @@ input[type="range"]::-moz-range-thumb{
   background-color: rgb(161 138 104 / var(--tw-bg-opacity));
 }
 
+.bg-dark-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(112 112 112 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1371,6 +1376,10 @@ input[type="range"]::-moz-range-thumb{
 .py-\[2px\] {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .pl-4 {
@@ -1561,6 +1570,16 @@ input[type="range"]::-moz-range-thumb{
 .placeholder\:text-dark-gray::placeholder {
   --tw-text-opacity: 1;
   color: rgb(112 112 112 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-accent::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(161 138 104 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-accent::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(161 138 104 / var(--tw-text-opacity));
 }
 
 .before\:absolute::before {
