@@ -81,7 +81,7 @@
                 
 
                 <div class="section-panel hidden mt-10" id="order">
-                    <div class="ct-flex-between p-6 bg-light-gray border-t-2 border-solid border-accent">
+                    <div class="ct-flex-between p-6 bg-light-gray border-t-2 border-solid border-accent hidden">
                         <p class="capitalize">
                             <!-- <i class="fa-solid fa-circle-check text-accent"></i> -->
                             <span class="ml-4">No order has been made yet.</span>
@@ -132,7 +132,7 @@
                 </div>
 
                 <div class="section-panel hidden mt-10" id="downloads">
-                    <div class="ct-flex-between p-6 bg-light-gray border-t-2 border-solid border-accent">
+                    <div class="ct-flex-between p-6 bg-light-gray border-t-2 border-solid border-accent hidden">
                         <p class="capitalize">
                             <!-- <i class="fa-solid fa-circle-check text-accent"></i> -->
                             <span class="ml-4">No downloads available yet.</span>
@@ -187,6 +187,32 @@
                             </td>
                         </tr>
                     </table>
+                    </div>
+                </div>
+
+                <div class="section-panel hidden mt-10" id="address">
+                    <p>
+                        The following addresses will be used on the checkout page by default.
+                    </p>
+                    <div class="mt-11 grid grid-cols-2 gap-x-20">
+                        <address class="not-italic">
+                            <div>
+                                <h3 class="text-xl capitalize">Billing address</h3>
+                                <button role="tab" aria-selected="true" aria-controls="addressDetails" id="detailsAddress" class="py-5 capitalize text-accent">add</button>
+                                <p class="text-dark-gray capitalize">You have not set up this type of address yet.</p>
+                            </div>
+                            <div>
+
+                            </div>
+                        </address>
+                        <address class="not-italic">
+                            <div>
+                                <h3 class="text-xl capitalize">shipping address</h3>
+                                <button role="tab" aria-selected="true" aria-controls="addressDetails" id="detailsAddress" class="py-5 capitalize text-accent">add</button>
+                                <p class="text-dark-gray capitalize">You have not set up this type of address yet.</p>
+                            </div>
+                            <div></div>
+                        </address>
                     </div>
                 </div>
             </div>

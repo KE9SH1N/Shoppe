@@ -1491,6 +1491,10 @@ input[type="range"]::-moz-range-thumb{
   text-transform: capitalize;
 }
 
+.not-italic {
+  font-style: normal;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
