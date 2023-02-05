@@ -196,18 +196,79 @@
                     </p>
                     <div class="mt-11 grid grid-cols-2 gap-x-20">
                         <address class="not-italic">
-                            <div>
-                                <h3 class="text-xl capitalize">Billing address</h3>
+                            <h3 class="text-xl capitalize">Billing address</h3>
+                            <div class="hidden">
                                 <button role="tab" aria-selected="true" aria-controls="addressDetails" id="detailsAddress" class="py-5 capitalize text-accent">add</button>
                                 <p class="text-dark-gray capitalize">You have not set up this type of address yet.</p>
                             </div>
-                            <div>
+                            <div class="mt-6">
+                                <form action="#" id="form">
+                                    <div class="grid grid-cols-2 gap-x-10 gap-y-10">
+                                        <div class="relative" id="fName">
+                                            <label for="firstName"></label>
+                                            <input type="text" placeholder="first name *" id="firstName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
+                                        <div class="relative" id="lName">
+                                            <label for="lastName"></label>
+                                            <input type="text" placeholder="last name *" id="lastName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
 
+                                        <div class="relative col-start-3 col-end-1" id="cName">
+                                            <label for="companyName"></label>
+                                            <input type="text" placeholder="company name *" id="companyName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="col-start-3 col-end-1">
+                                            <label for="country"></label>
+                                            <select name="shop" id="country" class="w-full py-4 border-b border-solid border-light-gray rounded-md text-sm text-dark-gray capitalize">
+                                                <option value="shop by">Country</option>
+                                                <option value="saab">bangladesh</option>
+                                                <option value="mercedes">usa</option>
+                                                <option value="audi">Soudi Arabia</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="relative col-start-3 col-end-1" id="street">
+                                            <label for="streetAddress"></label>
+                                            <input type="text" placeholder="street address *" id="streetAddress" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative col-start-3 col-end-1" id="postcode">
+                                            <label for="zip"></label>
+                                            <input type="text" placeholder="postcode / zip *" id="zip" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative col-start-3 col-end-1" id="city">
+                                            <label for="town"></label>
+                                            <input type="text" placeholder="town / city *" id="town" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative col-start-3 col-end-1" id="phone">
+                                            <label for="contact"></label>
+                                            <input type="tel" placeholder="phone *" id="contact" class="w-full pr-6 py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative col-start-3 col-end-1" id="Email">
+                                            <label for="email"></label>
+                                            <input type="email" placeholder="email *" id="email" class="w-full block pr-6 py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <button type="submit" class="font-bold px-16 py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">save address</button>
+                                </form>
                             </div>
                         </address>
                         <address class="not-italic">
+                            <h3 class="text-xl capitalize">shipping address</h3>
                             <div>
-                                <h3 class="text-xl capitalize">shipping address</h3>
                                 <button role="tab" aria-selected="true" aria-controls="addressDetails" id="detailsAddress" class="py-5 capitalize text-accent">add</button>
                                 <p class="text-dark-gray capitalize">You have not set up this type of address yet.</p>
                             </div>
