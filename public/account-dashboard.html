@@ -59,7 +59,7 @@
             </div>
             <div class="mt-16">
                 <nav class="border-b border-solid border-light-gray" id="dashboardDetails">
-                    <ul class="ct-flex-start gap-x-24 capitalize text-xl text-dark-gray" id="list">
+                    <ul class="ct-flex-start gap-x-12 capitalize text-xl text-dark-gray" id="list">
                         <li><button role="tab" aria-selected="true" aria-controls="dashboard" id="des" class="py-5 border-b-2 border-solid border-transparent hover:text-black smooth-hover-animation capitalize ct-active">dashboard</button></li>
                         <li><button role="tab" aria-selected="false" aria-controls="order" id="info" class="py-5 border-b-2 border-solid border-transparent hover:text-black smooth-hover-animation capitalize">order</button></li>
                         <li><button role="tab" aria-selected="false" aria-controls="downloads" id="downloads" class="py-5 border-b-2 border-solid border-transparent hover:text-black smooth-hover-animation capitalize">downloads</button></li>
@@ -78,8 +78,18 @@
                     </p>
                 </div>
 
+                
+
                 <div class="section-panel hidden mt-10" id="order">
-                    <table class="w-full capitalize">
+                    <div class="ct-flex-between p-6 bg-light-gray border-t-2 border-solid border-accent">
+                        <p class="capitalize">
+                            <!-- <i class="fa-solid fa-circle-check text-accent"></i> -->
+                            <span class="ml-4">No order has been made yet.</span>
+                        </p>
+                        <a href="shop.html" class="font-bold text-accent uppercase hover:text-black smooth-hover-animation">BROWSE PRODUCT</a>
+                    </div>
+                    <div>
+                        <table class="w-full capitalize">
                         <tr class="border-b border-solid border-gray text-left uppercase">
                             <th class="py-4">order number</th>
                             <th class="py-4">date</th>
@@ -118,6 +128,11 @@
                             </td>
                         </tr>
                     </table>
+                    </div>
+                </div>
+
+                <div class="section-panel hidden mt-10" id="downloads">
+                    downloads
                 </div>
             </div>
                 

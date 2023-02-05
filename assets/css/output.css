@@ -1194,6 +1194,16 @@ input[type="range"]::-moz-range-thumb{
        column-gap: 6rem;
 }
 
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
