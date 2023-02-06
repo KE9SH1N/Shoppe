@@ -991,6 +991,10 @@ input[type="range"]::-moz-range-thumb{
   margin-top: 1.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1043,6 +1047,18 @@ input[type="range"]::-moz-range-thumb{
   height: 20px;
 }
 
+.h-\[136px\] {
+  height: 136px;
+}
+
+.h-\[53px\] {
+  height: 53px;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-80 {
   width: 20rem;
 }
@@ -1093,6 +1109,10 @@ input[type="range"]::-moz-range-thumb{
 
 .w-\[33\.33px\] {
   width: 33.33px;
+}
+
+.w-\[136px\] {
+  width: 136px;
 }
 
 .table-auto {
@@ -1176,6 +1196,10 @@ input[type="range"]::-moz-range-thumb{
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -1186,6 +1210,14 @@ input[type="range"]::-moz-range-thumb{
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-32 {
+  gap: 8rem;
 }
 
 .gap-x-7 {
@@ -1257,6 +1289,11 @@ input[type="range"]::-moz-range-thumb{
 .gap-x-32 {
   -moz-column-gap: 8rem;
        column-gap: 8rem;
+}
+
+.gap-x-36 {
+  -moz-column-gap: 9rem;
+       column-gap: 9rem;
 }
 
 .overflow-hidden {
@@ -1509,6 +1546,14 @@ input[type="range"]::-moz-range-thumb{
 
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-left {

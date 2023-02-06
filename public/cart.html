@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shoppe an E-commerce jewellery website">
+
+    <!-- FONT AWESOME CDN LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../assets/css/output.css">
+
+    <title>Shoppe | Shopping Cart</title>
+</head>
+<body class="font-DM font-normal text-base text-black">
+    <header class="container ct-container mt-16">
+        <div class="ct-flex-between py-4 border-b-2 border-solid border-light-gray">
+            <h1 class=" font-Stencil text-4xl uppercase text-accent"><a href="index.html">S<span class="text-black">hoppe</span></a></h1>
+            <div class="ct-flex-between">
+                <nav class="w-80">
+                    <ul class="ct-flex-between mr-12 capitalize">
+                        <li><a class="py-[26px] active:border-b-2 active:border-solid active:border-dark-gray" href="shop.html">shop</a></li>
+                        <li><a class="py-[26px] active:border-b-2 active:border-solid active:border-dark-gray" href="blog.html">blog</a></li>
+                        <li><a class="py-[26px] active:border-b-2 active:border-solid active:border-dark-gray" href="about.html">our story</a></li>
+                    </ul>
+                </nav>
+                <div class="w-36">
+                    <ul class="ct-flex-between">
+                        <li>
+                            <a href="#" class="py-[26px] active:border-b-2 active:border-solid active:border-dark-gray">
+                                <!-- <img src="../assets/images/icons/search.png" alt="Search Icon"> -->
+                                <i class="fa-solid fa-magnifying-glass text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[26px] active:border-b-2 active:border-solid active:border-dark-gray">
+                                <!-- <img src="../assets/images/icons/cart.png" alt="Shopping Cart Icon"> -->
+                                <i class="fa-solid fa-cart-shopping text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-[26px] active:border-b-2 active:border-solid active:border-dark-gray">
+                                <!-- <img src="../assets/images/icons/user.png" alt="User Icon"> -->
+                                <i class="fa-regular fa-user text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container ct-container mt-24 mb-56">
+            <div class="grid grid-cols-2 gap-x-36">
+                <div>
+                    <ul>
+                        <li class="ct-flex-between items-start py-10 border-b border-solid border-gray">
+                            <div class="grid grid-cols-2 gap-x-10">
+                                <div class="w-[136px] h-[136px]">
+                                    <img src="../assets/images/products/Img 01.webp" class="w-full" alt="">
+                                </div>
+                                <div>
+                                    <h3>Lira Earrings</h3>
+                                    <p class="text-dark-gray">Black / Medium</p>
+                                    <p>$<span>20,00</span></p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start justify-start gap-x-12">
+                                <div class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray gap-x-3">
+                                    <button class="py-4 pl-3" id="minusQuantity">-</button>
+                                    <span class="py-4 font-bold text-accent" id="quantity">01</span>
+                                    <button class="py-4 pr-3" id="plusQuantity">+</button>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="ct-flex-between items-start py-10 border-b border-solid border-gray">
+                            <div class="grid grid-cols-2 gap-x-10">
+                                <div class="w-[136px] h-[136px]">
+                                    <img src="../assets/images/products/Img 01.webp" class="w-full" alt="">
+                                </div>
+                                <div>
+                                    <h3>Lira Earrings</h3>
+                                    <p class="text-dark-gray">Black / Medium</p>
+                                    <p>$<span>20,00</span></p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start justify-start gap-x-12">
+                                <div class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray gap-x-3">
+                                    <button class="py-4 pl-3" id="minusQuantity">-</button>
+                                    <span class="py-4 font-bold text-accent" id="quantity">01</span>
+                                    <button class="py-4 pr-3" id="plusQuantity">+</button>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="ct-flex-between items-start py-10 border-b border-solid border-gray">
+                            <div class="grid grid-cols-2 gap-x-10">
+                                <div class="w-[136px] h-[136px]">
+                                    <img src="../assets/images/products/Img 01.webp" class="w-full" alt="">
+                                </div>
+                                <div>
+                                    <h3>Lira Earrings</h3>
+                                    <p class="text-dark-gray">Black / Medium</p>
+                                    <p>$<span>20,00</span></p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start justify-start gap-x-12">
+                                <div class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray gap-x-3">
+                                    <button class="py-4 pl-3" id="minusQuantity">-</button>
+                                    <span class="py-4 font-bold text-accent" id="quantity">01</span>
+                                    <button class="py-4 pr-3" id="plusQuantity">+</button>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container ct-container mb-24">
+            <div class="ct-flex-between border-t border-solid border-dark-gray">
+                <div class="w-[40%] mt-14">
+                    <nav>
+                        <ul class="ct-flex-between text-dark-gray">
+                            <li><a class=" uppercase hover:text-black smooth-hover-animation" href="contact.html">CONTACT</a></li>
+                            <li><a class=" uppercase hover:text-black smooth-hover-animation" href="#">TERMS OF SERVICES</a></li>
+                            <li><a class=" uppercase hover:text-black smooth-hover-animation" href="#">SHIPPING AND RETURNS</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mt-12">
+                        <p class="text-dark-gray"><span class="text-black">&#169 2023 kensh1n.</span> Term of use <span class="text-black">and</span> privacy policy</p>
+                    </div>
+                </div>
+                <div class="mt-9">
+                    <div class="ct-flex-end border-b border-solid border-dark-gray">
+                        <p class="py-3 mr-32">Give an email, get the newsletter.</p>
+                        <!-- <img class="block" src="../assets/images/icons/right-arrow.png" alt="Right Arrow Image"> -->
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-long text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                        </a>
+
+                    </div>
+                    <div class=" mt-12">
+                        <ul class="ct-flex-end gap-x-7">
+                            <li><a href="#" class="">
+                                <i class="fa-brands fa-linkedin-in text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-facebook-f text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-instagram text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-twitter text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </footer>
+</body>
+</html>
