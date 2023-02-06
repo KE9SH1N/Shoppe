@@ -1127,6 +1127,10 @@ input[type="range"]::-moz-range-thumb{
   width: 30%;
 }
 
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .table-auto {
   table-layout: auto;
 }
