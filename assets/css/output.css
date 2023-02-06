@@ -852,6 +852,10 @@ input[type="range"]::-moz-range-thumb{
   top: 5%;
 }
 
+.right-\[50\%\] {
+  right: 50%;
+}
+
 .col-start-3 {
   grid-column-start: 3;
 }
@@ -1115,6 +1119,14 @@ input[type="range"]::-moz-range-thumb{
   width: 136px;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .table-auto {
   table-layout: auto;
 }
@@ -1190,6 +1202,10 @@ input[type="range"]::-moz-range-thumb{
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1532,6 +1548,16 @@ input[type="range"]::-moz-range-thumb{
   padding-bottom: 1.5rem;
 }
 
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pr-6 {
   padding-right: 1.5rem;
 }
@@ -1735,6 +1761,16 @@ input[type="range"]::-moz-range-thumb{
 .placeholder\:text-sm::placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.placeholder\:text-xs::-moz-placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeholder\:text-xs::placeholder {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .placeholder\:capitalize::-moz-placeholder {
