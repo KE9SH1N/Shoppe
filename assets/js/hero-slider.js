@@ -20,8 +20,8 @@ const dashboardMenu = document.querySelector("#dashboardMenu");
 // console.log(dashboardMenu);
 
 window.addEventListener('click', (e)=>{
-  console.log(e.target);
-  if(e.target.id === "menuOn" || e.target.id === "userProfileImg"){
+  // console.log(e.target);
+  if(e.target.id === "menuOn" || e.target.id === "userProfileImg" || e.target.id === "userLogin" || e.target.id === "accountDashboard"){
     dashboardMenu.classList.toggle("hidden");
   }
   else{
