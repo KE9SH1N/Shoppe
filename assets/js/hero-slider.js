@@ -48,3 +48,19 @@ logoutMenuItem.addEventListener("click", ()=>{
 })
 
 
+const shoppingBag = document.querySelector("#shoppingBag");
+const cartToggler = document.querySelector("#cartBtnToggler");
+// console.log(cartToggler);
+
+
+window.addEventListener('click', (e)=>{
+  console.log(e.target.id);
+  if(e.target.id === "cartIcon" || e.target.id === "cartBtnToggler" || e.target.id === "cartNotification"){
+      shoppingBag.classList.toggle("ct-hidden-bag");
+  }
+  else{
+    shoppingBag.classList.add("ct-hidden-bag");
+  }
+  
+})
+

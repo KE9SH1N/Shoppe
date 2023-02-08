@@ -36,13 +36,13 @@
                                 <i class="fa-solid fa-magnifying-glass text-dark-gray hover:text-black smooth-hover-animation"></i>
                             </a>
                         </li>
-                        <li >
-                            <a href="cart.html" class="relative">
-                                <i class="fa-solid fa-cart-shopping text-dark-gray hover:text-black smooth-hover-animation"></i>
-                                <p class="absolute -top-[50%] -right-[60%] bg-accent border border-solid border-light-gray w-5 h-5 ct-flex-center rounded-full text-[10px] font-semibold text-white ">
-                                    <span>15</span>
+                        <li id="cartBtnToggler">
+                            <button type="submit" class="relative" id="cartBtnToggler">
+                                <i class="fa-solid fa-cart-shopping text-dark-gray hover:text-black smooth-hover-animation" id="cartIcon"></i>
+                                <p id="cartNotification" class="absolute -top-[50%] -right-[60%] bg-accent border border-solid border-light-gray w-5 h-5 ct-flex-center rounded-full text-[10px] font-semibold text-white ">
+                                    15
                                 </p>
-                            </a>
+                            </button>
                         </li>
                         <li class="hidden" id="userIcon" >
                             <a href="account.html">
@@ -70,7 +70,7 @@
         </div>
     </header>
 
-    <section class="absolute top-0 right-0 pt-16 pb-6 border border-solid border-gray bg-white shadow-md h-screen z-10">
+    <section class="absolute top-0 right-0 pt-16 pb-6 border border-solid border-gray bg-white shadow-md z-10 ct-hidden-bag smooth-hover-animation-mid" id="shoppingBag">
         <div >
             <div class="px-8">
                 <h3>Shopping Bag</h3>

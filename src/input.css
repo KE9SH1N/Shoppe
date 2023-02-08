@@ -148,6 +148,12 @@
         @apply h-[18%];
     }
 
+    /* ACTIVE SHOPPING BAG STATUS  */
+
+    .ct-hidden-bag{
+        @apply opacity-0 translate-x-full invisible;
+    }
+
 
 
 
