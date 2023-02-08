@@ -42,13 +42,13 @@
                                 <i class="fa-solid fa-cart-shopping text-dark-gray hover:text-black smooth-hover-animation"></i>
                             </a>
                         </li>
-                        <li class="hidden">
+                        <li class="hidden" id="userIcon" >
                             <a href="account.html">
                                 <!-- <img src="../assets/images/icons/user.png" alt="User Icon"> -->
                                 <i class="fa-regular fa-user text-dark-gray hover:text-black smooth-hover-animation"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="" id="userLogin">
                             <div class="relative">
                                 <a href="#" class="flex items-center justify-center gap-1" id="accountDashboard">
                                     <img src="../assets/images/avatar/avatar-1.jpg" class="w-5 h-5 rounded-full" alt="User Profile Image" id="userProfileImg">
@@ -57,8 +57,8 @@
                                 </a>
                                 <div class="absolute w-[150px] top-[130%] right-0 bg-light-gray rounded-lg z-[999] overflow-hidden shadow-lg hidden" id="dashboardMenu">
                                     <ul class="flex items-start justify-start flex-col text-left text-black">
-                                        <li class="w-full hover:bg-accent hover:text-white p-2 cursor-pointer"><a href="#">My Account</a></li>
-                                        <li class="w-full hover:bg-accent hover:text-white p-2 cursor-pointer"><a href="#">Logout</a></li>
+                                        <a href="account-dashboard.html" class="w-full" ><li class="w-full hover:bg-accent hover:text-white p-2 cursor-pointer">My Account</li></a>
+                                        <a href="#" class="w-full"><li class="w-full hover:bg-accent hover:text-white p-2 cursor-pointer" id="logoutMenu"> Logout</li></a>
                                     </ul>
                                 </div>
                             </div>

@@ -31,3 +31,20 @@ window.addEventListener('click', (e)=>{
 })
 
 
+const logoutMenuItem = document.querySelector("#logoutMenu");
+const userNavIcon = document.querySelector("#userIcon");
+const loginActiveState = document.querySelector("#userLogin");
+
+logoutMenuItem.addEventListener("click", ()=>{
+  if(userNavIcon.classList.contains("hidden")){
+    userNavIcon.classList.remove("hidden");
+    loginActiveState.classList.add("hidden");
+  }
+  else{
+    userNavIcon.classList.add("hidden");
+    loginActiveState.classList.remove("hidden");
+  }
+  
+})
+
+
