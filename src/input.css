@@ -1,4 +1,29 @@
 @tailwind base;
+
+
+/* Firefox */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #A18A68;
+}
+
+/* Chrome, Edge, and Safari */
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #D8D8D8;
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #A18A68;
+  border-radius: 14px;
+  border: 3px solid transparent;
+}
+
+
 @tailwind components;
 @tailwind utilities;
 
@@ -160,4 +185,5 @@
         font-family: "DM Sans";
         src: url("../assets/fonts/DMSans-Regular.ttf") format("ttf");
     }
+
 }
