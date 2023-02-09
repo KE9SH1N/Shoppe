@@ -901,6 +901,42 @@ input[type="range"]::-moz-range-thumb{
   top: 5%;
 }
 
+.left-\[30\%\] {
+  left: 30%;
+}
+
+.-top-\[70\%\] {
+  top: -70%;
+}
+
+.-top-\[20\%\] {
+  top: -20%;
+}
+
+.-top-\[60\%\] {
+  top: -60%;
+}
+
+.-top-\[80\%\] {
+  top: -80%;
+}
+
+.top-\[80\%\] {
+  top: 80%;
+}
+
+.-top-\[10\%\] {
+  top: -10%;
+}
+
+.-top-\[200\%\] {
+  top: -200%;
+}
+
+.top-\[20\%\] {
+  top: 20%;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
@@ -1116,6 +1152,18 @@ input[type="range"]::-moz-range-thumb{
   height: 20px;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .max-h-\[65vh\] {
   max-height: 65vh;
 }
@@ -1190,6 +1238,18 @@ input[type="range"]::-moz-range-thumb{
 
 .w-\[33\.33px\] {
   width: 33.33px;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .border-separate {
@@ -1360,6 +1420,14 @@ input[type="range"]::-moz-range-thumb{
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -1490,6 +1558,10 @@ input[type="range"]::-moz-range-thumb{
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .py-4 {
@@ -1740,6 +1812,11 @@ input[type="range"]::-moz-range-thumb{
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-light-gray {
+  --tw-text-opacity: 1;
+  color: rgb(239 239 239 / var(--tw-text-opacity));
 }
 
 .opacity-0 {

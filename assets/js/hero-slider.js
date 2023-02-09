@@ -48,19 +48,30 @@ logoutMenuItem.addEventListener("click", ()=>{
 })
 
 
-const shoppingBag = document.querySelector("#shoppingBag");
-const cartToggler = document.querySelector("#cartBtnToggler");
-// console.log(cartToggler);
+const shoppingBag = document.getElementById("bagSection");
+const cartToggler = document.getElementById("cartBtnToggler");
+const cartBagCross = document.getElementById("bagCrossBtn");
+const crossBtn = document.querySelector("#crossBtn");
+const productOne = document.querySelector("#product1");
 
 
-window.addEventListener('click', (e)=>{
-  console.log(e.target.id);
-  if(e.target.id === "cartIcon" || e.target.id === "cartBtnToggler" || e.target.id === "cartNotification"){
-      shoppingBag.classList.toggle("ct-hidden-bag");
-  }
-  else{
-    shoppingBag.classList.add("ct-hidden-bag");
-  }
+cartToggler.addEventListener('click', (e)=>{
   
+    if(e.target.id === "cartIcon" || e.target.id === "cartBtnToggler" || e.target.id === "cartNotification"){
+      shoppingBag.classList.toggle("ct-hidden-bag");
+    }
+    else{
+      shoppingBag.classList.add("ct-hidden-bag");
+    }
 })
+
+cartBagCross.addEventListener("click", ()=>{
+  shoppingBag.classList.add("ct-hidden-bag");
+})
+
+crossBtn.addEventListener("click",(e)=>{
+  productOne.classList.add("hidden");
+})
+
+
 
