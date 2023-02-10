@@ -31,7 +31,7 @@
                 <div class="w-36">
                     <ul class="ct-flex-between">
                         <li>
-                            <a href="#">
+                            <a href="#" onclick="hightSlide(searchDiv, 'h-full')"> 
                                 <!-- <img src="../assets/images/icons/search.png" alt="Search Icon"> -->
                                 <i class="fa-solid fa-magnifying-glass text-dark-gray hover:text-black smooth-hover-animation"></i>
                             </a>
@@ -69,6 +69,18 @@
             </div>
         </div>
     </header>
+
+    <section>
+        <!-- SEARCH STARTS -->
+        <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-light-gray z-[99999]">
+            <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-8 text-2xl bg-accent border border-accent py-1 px-3"><i
+                        class="fa-solid fa-xmark text-white"></i></button>
+            <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
+                <input type="text" placeholder="type keyword(s) here" class="w-full leading-[3.75rem] text-4xl text-center font-light py-1 border-b-2 border-accent focus:outline-none placeholder:capitalize">
+                <button class="absolute right-0 top-[20%] w-12 h-12 bg-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </section>
 
     <section class="absolute top-0 right-0 pt-16 pb-6 border border-solid border-gray bg-white shadow-md z-10 ct-hidden-bag smooth-hover-animation-mid" id="bagSection">
         <div>
