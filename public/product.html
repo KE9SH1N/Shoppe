@@ -209,7 +209,7 @@
                 <i class="fa-solid fa-circle-check text-accent"></i>
                 <span class="ml-4">The item added to your Shopping bag.</span>
             </p>
-            <a href="shop.html" class="font-bold text-accent uppercase hover:text-black smooth-hover-animation">view cart</a>
+            <a href="cart.html" class="font-bold text-accent uppercase hover:text-black smooth-hover-animation">view cart</a>
         </div>
     </section>
 
@@ -246,12 +246,15 @@
                     <p class="mt-5 text-dark-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. </p>
 
                     <div class="mt-12 ct-flex-between">
-                        <div class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray w-[20%] gap-x-3">
-                            <button class="py-4 pl-3" id="minusQuantity">-</button>
+                        <div id="productDetailsQuantity" class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray w-[20%] gap-x-3">
+                            <button
+                                type="submit" class="py-4 pl-3" id="minusQuantity">-</button>
                             <span class="py-4 font-bold text-accent" id="quantity">01</span>
-                            <button class="py-4 pr-3" id="plusQuantity">+</button>
+                            <button 
+                            type="submit" class="py-4 pr-3" id="plusQuantity">+</button>
                         </div>
                         <button 
+                            
                             type="submit" id="addToCart"
                             class="block font-bold px-32 py-4 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">
                             add to cart

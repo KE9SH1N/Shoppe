@@ -41,29 +41,27 @@ projectDetailsMenus.forEach(menu => {
 // INCREMENT AND DECREMENT FUNCTIONALITY FOR PRODUCT ORDER 
 
 // selecting html element by id 
-const decrement = document.querySelector('#minusQuantity');
-const increment = document.querySelector('#plusQuantity');
-const quantity = document.querySelector('#quantity');
+const decrement = document.getElementById('minusQuantity').id;
 
+const increment = document.getElementById('plusQuantity').id;
+// console.log(increment);
+const quantity = document.getElementById('productDetailsQuantity').querySelector("span");
+// console.log(quantity);
 // temporary variable initialize 
 let tempQuantity = 1;
 
-// increment function with click event
-increment.addEventListener('click', ()=>{
-    // when clicked at + sign then temporary quantity variable will increase 
-    tempQuantity++;
+document.addEventListener("click", (e)=>{
+    // console.log(e.target.id);
+    if(e.target.id == increment){
+        tempQuantity++;
     // if temporary quantity variable < 10 then add a zero before temporary Quantity otherwise no addition needed
-    tempQuantity = (tempQuantity < 10) ? "0" + tempQuantity : tempQuantity;
-    // console.log(tempQuantity);
-    // print as quantity value inside html element 
-    quantity.innerHTML = tempQuantity;
-})
-
-
-// decrement function with click event
-decrement.addEventListener('click', ()=>{
-    // if temporary quantity value < 1 then you can't decrement the value 
-    if(tempQuantity > 1){
+        tempQuantity = (tempQuantity < 10) ? "0" + tempQuantity : tempQuantity;
+        // console.log(tempQuantity);
+        // print as quantity value inside html element 
+        quantity.innerHTML = tempQuantity;
+        // console.log(tempQuantity);
+    }
+    else if(e.target.id == decrement && tempQuantity > 1){
         // temporary quantity value decrease
         tempQuantity--;
         // if temporary quantity variable < 10 then add a zero before temporary Quantity otherwise no addition needed
@@ -72,6 +70,31 @@ decrement.addEventListener('click', ()=>{
         quantity.innerHTML = tempQuantity;
     }
 })
+
+// increment function with click event
+// increment.addEventListener('click', (e)=>{
+//     console.log("clicked");
+//     // when clicked at + sign then temporary quantity variable will increase 
+//     tempQuantity++;
+//     // if temporary quantity variable < 10 then add a zero before temporary Quantity otherwise no addition needed
+//     tempQuantity = (tempQuantity < 10) ? "0" + tempQuantity : tempQuantity;
+//     // console.log(tempQuantity);
+//     // print as quantity value inside html element 
+//     quantity.innerHTML = tempQuantity;
+// })
+
+// decrement function with click event
+// decrement.addEventListener('click', ()=>{
+//     // if temporary quantity value < 1 then you can't decrement the value 
+//     if(tempQuantity > 1){
+//         // temporary quantity value decrease
+//         tempQuantity--;
+//         // if temporary quantity variable < 10 then add a zero before temporary Quantity otherwise no addition needed
+//         tempQuantity = (tempQuantity < 10) ? "0" + tempQuantity : tempQuantity;
+//         // print as quantity value inside html element 
+//         quantity.innerHTML = tempQuantity;
+//     }
+// })
 
 // PRODUCT DETAILS IMAGE SELECTION FUNCTIONALITY 
 
