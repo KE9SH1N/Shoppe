@@ -952,6 +952,34 @@ input[type="range"]::-moz-range-thumb{
   top: 8%;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-1\/4 {
+  top: 25%;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-\[150px\] {
+  top: 150px;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.top-\[180px\] {
+  top: 180px;
+}
+
+.top-\[120px\] {
+  top: 120px;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
