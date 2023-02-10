@@ -314,9 +314,9 @@
                     <div class="mt-10 flex items-end justify-end flex-col pb-10 border-b border-solid border-gray">
                         <div class="w-1/2 ct-flex-between">
                             <h3 class="uppercase">CALCULATE SHIPPING</h3>
-                            <p>
-                                <span><i class="fa-solid fa-angle-up cursor-pointer"></i></span>
-                                <span><i class="fa-solid fa-angle-down hidden cursor-pointer"></i></span>
+                            <p id="dropdownIcon">
+                                <span onclick="expandShipping(dropdownIcon)"><i class="fa-solid fa-angle-up cursor-pointer"></i></span>
+                                <span onclick="expandShipping(dropdownIcon)"><i class="fa-solid fa-angle-down hidden cursor-pointer"></i></span>
                             </p>
                         </div>
                         <div class="w-1/2 mt-6">
@@ -415,5 +415,6 @@
 
     <!-- CUSTOM JS  -->
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/cart.js"></script>
 </body>
 </html>
