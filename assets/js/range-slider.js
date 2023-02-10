@@ -25,4 +25,3 @@ rangeInput.forEach(input =>{
         }
     });
 });
-
