@@ -1,6 +1,6 @@
 const activePage = window.location.pathname;
 
-console.log(activePage);
+// console.log(activePage);
 
 const navLinks = document.querySelector('nav').querySelectorAll("a").
 
