@@ -16,7 +16,7 @@
 
     <title>Shoppe | Home</title>
 </head>
-<body class="font-DM font-normal text-base text-black overflow-x-hidden">
+<body class="font-DM font-normal text-base text-black overflow-x-hidden relative">
     <header class="container ct-container mt-16">
         <div class="ct-flex-between">
             <h1 class=" font-Stencil text-4xl uppercase text-accent"><a href="index.html">S<span class="text-black">hoppe</span></a></h1>
@@ -82,18 +82,18 @@
         </div>
     </section>
 
-    <section class="absolute top-0 right-0 pt-16 pb-6 border border-solid border-gray bg-white shadow-md z-10 ct-hidden-bag smooth-hover-animation-mid" id="bagSection">
+    <section class="absolute overflow-hidden ct-hide-bag top-[4%] right-0 pt-16 pb-6 border border-solid border-gray bg-white shadow-md z-50 smooth-hover-animation-mid" id="shoppingBag">
         <div>
             <div class="px-8 relative">
-                <div class="absolute -top-[80%] left-[5%] text-center w-6 h-6 border border-solid  bg-accent border-gray rounded-full" id="bagCrossBtn">
-                    <i class="fa-solid fa-xmark cursor-pointer text-light-gray" id=""></i>
+                <div class="absolute -top-[80%] left-[5%] text-center w-6 h-6 border border-solid bg-accent border-gray rounded-full">
+                    <i class="fa-solid fa-xmark cursor-pointer text-light-gray" id="bagCrossBtn"></i>
                 </div>
                 <h3>Shopping Bag</h3>
                 <p class="text-dark-gray text-xs mt-4"><span>5</span> items</p>
             </div>
             
 
-            <div class="px-8 mr-4 overflow-y-scroll scrollbar max-h-[65vh]">
+            <div class="px-8 mr-4 overflow-y-scroll scrollbar max-h-[45vh]">
                 <ul>
                     <li class="ct-flex-between items-start py-10" id="product1">
                         <div class="grid grid-cols-2 gap-x-2">

@@ -1,5 +1,9 @@
 @tailwind base;
 
+html{
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
 
 /* Firefox */
 .scrollbar {
@@ -150,8 +154,11 @@
 
     /* ACTIVE SHOPPING BAG STATUS  */
 
-    .ct-hidden-bag{
-        @apply opacity-0 translate-x-full invisible;
+    .ct-show-bag{
+        @apply opacity-100 translate-x-0 visible !important;
+    }
+    .ct-hide-bag{
+        @apply opacity-0 translate-x-full invisible !important;
     }
 
 
