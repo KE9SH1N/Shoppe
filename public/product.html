@@ -341,29 +341,35 @@
                             <span class="text-xs text-dark-gray">Your email address will not be published. Required fields are marked *</span>
                         </div>
                         <div class="mt-11">
-                            <form action="#">
-                                <div class="">
-                                    <label for="review"></label>
-                                    <textarea class="w-full border-b border-solid border-dark-gray outline-none placeholder:text-sm placeholder:text-dark-gray placeholder:capitalize" 
-                                    name="review" id="review" cols="50" rows="5" placeholder="your review*" required></textarea>
-                                </div>
+                            <form action="#" id="reviewForm">
+                                <div class="grid grid-cols-1 gap-y-11">
+                                    <div>
+                                        <label for="review"></label>
+                                        <textarea class="w-full border-b border-solid border-dark-gray outline-none placeholder:text-sm placeholder:text-dark-gray placeholder:capitalize" 
+                                        name="review" id="review" cols="50" rows="5" placeholder="your review*" required></textarea>
+                                    </div>
 
-                                <div class="mt-11">
-                                    <label for="name"></label>
-                                    <input class="py-3 w-full border-b border-solid border-dark-gray outline-none placeholder:text-sm placeholder:text-dark-gray placeholder:capitalize"
-                                        type="text" id="name" placeholder="Enter your name*" required>
-                                </div>
+                                    <div class="relative" id="reviewName">
+                                        <label for="rName"></label>
+                                        <input class="py-3 w-full border-b border-solid border-dark-gray outline-none placeholder:text-sm placeholder:text-dark-gray placeholder:capitalize"
+                                            oninput="inputValue(reviewName)"  
+                                            type="text" id="rName" placeholder="Enter your name*" required>
+                                        <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                    </div>
 
-                                <div class="mt-11">
-                                    <label for="email"></label>
-                                    <input class="py-3 w-full border-b border-solid border-dark-gray outline-none placeholder:text-sm placeholder:text-dark-gray placeholder:capitalize"
-                                        type="email" id="email" placeholder="Enter your email*" required>
-                                </div>
-                                <div class="mt-11">
-                                    <input class="align-middle"
-                                        type="checkbox" id="checkBox" name="checkbox">
-                                    <label class="ml-2 text-xs text-dark-gray cursor-pointer"
-                                     for="checkBox">Save my name, email, and website in this browser for the next time I comment</label>
+                                    <div class="relative" id="reviewEmail">
+                                        <label for="rEmail"></label>
+                                        <input class="py-3 w-full border-b border-solid border-dark-gray outline-none placeholder:text-sm placeholder:text-dark-gray placeholder:capitalize"
+                                            oninput="inputValue(reviewEmail)"   
+                                            type="email" id="rEmail" placeholder="Enter your email*" required>
+                                        <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                    </div>
+                                    <div>
+                                        <input class="align-middle"
+                                            type="checkbox" id="checkBox" name="checkbox">
+                                        <label class="ml-2 text-xs text-dark-gray cursor-pointer"
+                                        for="checkBox">Save my name, email, and website in this browser for the next time I comment</label>
+                                    </div>
                                 </div>
 
                                 <div class="mt-10">
@@ -495,5 +501,8 @@
     <!-- CUSTOM JS  -->
     <script src="../assets/js/nav-menu.js"></script>
     <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/form.js"></script>
+    
+
 </body>
 </html>

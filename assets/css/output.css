@@ -1432,6 +1432,10 @@ input[type="range"]::-moz-range-thumb{
        column-gap: 6rem;
 }
 
+.gap-y-11 {
+  row-gap: 2.75rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
