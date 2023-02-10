@@ -215,20 +215,20 @@
                 <div class="mt-20">
                     <form action="#" id="form">
                         <div class="grid grid-cols-2 gap-x-10 gap-y-10">
-                            <div class="relative" id="fName">
+                            <div class="relative" id="contactFirstName">
                                 <label for="firstName"></label>
-                                <input type="text" oninput="return firstNameCross()" placeholder="first name" id="firstName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
-                                <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                <input type="text" oninput="valueName(contactFirstName)" placeholder="first name" id="firstName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent cursor-pointer smooth-hover-animation"></i>
                             </div>
-                            <div class="relative" id="lName">
+                            <div class="relative" id="contactLastName">
                                 <label for="lastName"></label>
-                                <input type="text" oninput="return lastNameCross()" placeholder="last name" id="lastName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
-                                <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                <input type="text" oninput="valueName(contactLastName)" placeholder="last name" id="lastName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent cursor-pointer smooth-hover-animation"></i>
                             </div>
-                            <div class="relative" id="Email">
+                            <div class="relative" id="contactEmail">
                                 <label for="email"></label>
-                                <input type="email" oninput="return emailCross()" placeholder="email" id="email" class="w-full block pr-6 py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
-                                <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] text-accent cursor-pointer"></i>
+                                <input type="email" oninput="valueName(contactEmail)" placeholder="email" id="email" class="w-full block pr-6 py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent cursor-pointer smooth-hover-animation"></i>
                             </div>
 
                             <div>
@@ -302,6 +302,6 @@
 
     <!-- CUSTOM JS  -->
     <script src="../assets/js/header.js"></script>
-    <script src="../assets/js/contact-form.js"></script>
+    <script src="../assets/js/form.js"></script>
 </body>
 </html>
