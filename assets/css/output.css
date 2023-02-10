@@ -527,7 +527,6 @@ video {
 
 html{
   overflow-x: hidden;
-  scrollbar-width: none;
 }
 
 /* Firefox */
@@ -937,8 +936,16 @@ input[type="range"]::-moz-range-thumb{
   left: 50%;
 }
 
+.top-\[10\%\] {
+  top: 10%;
+}
+
 .top-\[5\%\] {
   top: 5%;
+}
+
+.top-\[6\%\] {
+  top: 6%;
 }
 
 .z-\[999\] {
