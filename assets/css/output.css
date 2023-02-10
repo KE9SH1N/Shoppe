@@ -948,6 +948,10 @@ input[type="range"]::-moz-range-thumb{
   top: 6%;
 }
 
+.top-\[8\%\] {
+  top: 8%;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
