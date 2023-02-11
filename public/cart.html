@@ -224,8 +224,11 @@
                             </div>
 
                             <div class="flex items-start justify-start gap-x-12">
-                                <div class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray gap-x-3">
-                                    <button class="py-3 pl-3" id="minusQuantity">-</button>
+                                <div 
+                                id="productDetailsQuantity" 
+                                class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray gap-x-3">
+                                    <button 
+                                    class="py-3 pl-3" id="minusQuantity">-</button>
                                     <span class="py-3 text-accent" id="quantity">01</span>
                                     <button class="py-3 pr-3" id="plusQuantity">+</button>
                                 </div>
@@ -234,55 +237,6 @@
                                 </div>
                             </div>
                         </li>
-
-                        <li class="ct-flex-between items-start py-10 border-b border-solid border-gray">
-                            <div class="grid grid-cols-2 gap-x-10">
-                                <div class="w-[136px] h-[136px]">
-                                    <img src="../assets/images/products/Img 02.webp" class="w-full" alt="Product image 3">
-                                </div>
-                                <div>
-                                    <h3>Lira Earrings</h3>
-                                    <p class="text-dark-gray">Black / Medium</p>
-                                    <p>$<span>20,00</span></p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start justify-start gap-x-12">
-                                <div class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray gap-x-3">
-                                    <button class="py-3 pl-3" id="minusQuantity">-</button>
-                                    <span class="py-3 text-accent" id="quantity">01</span>
-                                    <button class="py-3 pr-3" id="plusQuantity">+</button>
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-xmark cursor-pointer"></i>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="ct-flex-between items-start py-10 border-b border-solid border-gray">
-                            <div class="grid grid-cols-2 gap-x-10">
-                                <div class="w-[136px] h-[136px]">
-                                    <img src="../assets/images/products/Img 03.webp" class="w-full" alt="Product image 3">
-                                </div>
-                                <div>
-                                    <h3>Lira Earrings</h3>
-                                    <p class="text-dark-gray">Black / Medium</p>
-                                    <p>$<span>20,00</span></p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start justify-start gap-x-12">
-                                <div class="grid grid-cols-3 border border-solid border-light-gray rounded-md bg-light-gray gap-x-3">
-                                    <button class="py-3 pl-3" id="minusQuantity">-</button>
-                                    <span class="py-3 text-accent" id="quantity">01</span>
-                                    <button class="py-3 pr-3" id="plusQuantity">+</button>
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-xmark cursor-pointer"></i>
-                                </div>
-                            </div>
-                        </li>
-                        
                     </ul>
                     <div class="text-end">
                         <button type="submit" class="w-[30%] font-bold py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">update cart</button>
@@ -312,15 +266,12 @@
                     </div>
 
                     <div class="mt-10 flex items-end justify-end flex-col pb-10 border-b border-solid border-gray">
-                        <div class="w-1/2 ct-flex-between">
+                        <div class="w-1/2 ct-flex-between" onclick="toggleCalculatShipping(dropdownIcon)">
                             <h3 class="uppercase">CALCULATE SHIPPING</h3>
-                            <p id="dropdownIcon">
-                                <span onclick="expandShipping(dropdownIcon)"><i class="fa-solid fa-angle-up cursor-pointer"></i></span>
-                                <span onclick="expandShipping(dropdownIcon)"><i class="fa-solid fa-angle-down hidden cursor-pointer"></i></span>
-                            </p>
+                            <i id="dropdownIcon" class="fa-solid fa-angle-down cursor-pointer"></i>
                         </div>
                         <div class="w-1/2 mt-6">
-                            <form action="#" class="grid grid-col-1 gap-y-6">
+                            <form action="#"class="grid grid-col-1 gap-y-6 opacity-0 h-0 invisible smooth-hover-animation-mid"  id="calculatShippingForm">
                                 <div class="w-full">
                                     <label for="country"></label>
                                     <select name="shop" id="country" class="w-full py-4 border-b border-solid border-light-gray rounded-md text-sm text-dark-gray capitalize">
@@ -355,7 +306,7 @@
                         </div>
                     </div>
 
-                    <div class="mt-10 ct-flex-between font-bold">
+                    <div class="mt-10 ct-flex-between font-bold smooth-hover-animation-mid">
                         <p class=" uppercase">totals</p>
                         <p>
                             $ <span>87,00</span>

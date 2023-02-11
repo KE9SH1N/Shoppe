@@ -78,3 +78,18 @@ function hightSlide(id, hSize) {
           id.classList.remove(`${hSize}`, "opacity-100", "visible");
      }
 }
+
+// // DROPDOWN TOGGLE
+function toggleCalculatShipping(btn) {
+     const calculatShippingForm = document.getElementById("calculatShippingForm");
+
+     if (btn.classList.contains("fa-angle-down")) {
+          hightSlide(calculatShippingForm, 'h-full');
+          btn.classList.remove("fa-angle-down");
+          btn.classList.add("fa-angle-up");
+     }else{
+          hightSlide(calculatShippingForm, 'h-full');
+          btn.classList.remove("fa-angle-up");
+          btn.classList.add("fa-angle-down");
+     }
+}
