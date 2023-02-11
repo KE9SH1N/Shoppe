@@ -724,12 +724,11 @@ html{
   background-color: transparent !important;
 }
 
-/* TOGGLE REVIEW STAR  */
+/* TOGGLE REVIEW STAR 
 
-.rate input:checked + label i {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 138 104 / var(--tw-bg-opacity));
-}
+    .rate input:checked + label i{
+        @apply bg-accent;
+    } */
 
 /* PRICE RANGE  */
 

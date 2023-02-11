@@ -127,3 +127,21 @@ addToCartBtn.addEventListener('click', (e)=>{
             cartMessage.classList.add("hidden");
         },4000)
     })
+
+
+// STAR FILL FUNCTIONALITY
+
+
+function starRating(id){
+    const starList = id.querySelectorAll("label i");
+
+    starList.forEach(star=>{
+        star.addEventListener("click", e =>{
+            v1 = parseInt(e.target.value);
+            e.target.classList.remove("fa-regular");
+            e.target.classList.add("fa-solid");
+        })
+    })
+    
+}
+

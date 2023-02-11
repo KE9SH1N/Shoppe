@@ -87,11 +87,11 @@ html{
 
     
 
-    /* TOGGLE REVIEW STAR  */
+    /* TOGGLE REVIEW STAR 
 
     .rate input:checked + label i{
         @apply bg-accent;
-    }
+    } */
 
     /* PRICE RANGE  */
 
