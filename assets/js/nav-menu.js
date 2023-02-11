@@ -129,19 +129,19 @@ addToCartBtn.addEventListener('click', (e)=>{
     })
 
 
-// STAR FILL FUNCTIONALITY
+// // STAR FILL FUNCTIONALITY
 
 
-function starRating(id){
-    const starList = id.querySelectorAll("label i");
+// function starRating(id){
+//     const starList = id.querySelectorAll("label i");
 
-    starList.forEach(star=>{
-        star.addEventListener("click", e =>{
-            v1 = parseInt(e.target.value);
-            e.target.classList.remove("fa-regular");
-            e.target.classList.add("fa-solid");
-        })
-    })
+//     starList.forEach(star=>{
+//         star.addEventListener("click", e =>{
+//             v1 = parseInt(e.target.value);
+//             e.target.classList.remove("fa-regular");
+//             e.target.classList.add("fa-solid");
+//         })
+//     })
     
-}
+// }
 

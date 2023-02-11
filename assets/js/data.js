@@ -1,4 +1,4 @@
-fetch("../../products.json")
+fetch("https://ke9sh1n.github.io/Shoppe/products.json")
     .then(function(response){
         return response.json();
     })
