@@ -18,11 +18,11 @@
     <title>Shoppe | Home</title>
 </head>
 <body class="font-DM font-normal text-base text-black overflow-x-hidden relative">
-    <header class="container ct-container mt-16">
+    <header class="container ct-container mt-4 md:mt-16">
         <div class="ct-flex-between">
             <h1 class=" font-Stencil text-4xl uppercase text-accent"><a href="index.html">S<span class="text-black">hoppe</span></a></h1>
             <div class="ct-flex-between">
-                <nav class="w-80">
+                <nav class="w-80 md:block hidden">
                     <ul class="ct-flex-between mr-12 capitalize">
                         <li><a class="py-[26px]" href="shop.html">shop</a></li>
                         <li><a class="py-[26px]" href="blog.html">blog</a></li>
@@ -30,8 +30,8 @@
                     </ul>
                 </nav>
                 <div class="w-36">
-                    <ul class="ct-flex-between">
-                        <li>
+                    <ul class="md:ct-flex-between ct-flex-end gap-x-8">
+                        <li class="hidden md:flex">
                             <a href="#" onclick="hightSlide(searchDiv, 'h-full')"> 
                                 <!-- <img src="../assets/images/icons/search.png" alt="Search Icon"> -->
                                 <i class="fa-solid fa-magnifying-glass text-dark-gray hover:text-black smooth-hover-animation"></i>
@@ -51,7 +51,7 @@
                                 <i class="fa-regular fa-user text-dark-gray hover:text-black smooth-hover-animation"></i>
                             </a>
                         </li>
-                        <li class="" id="userLogin">
+                        <li class="hidden md:block" id="userLogin">
                             <div class="relative">
                                 <a href="#" class="flex items-center justify-center gap-1" id="accountDashboard">
                                     <img src="../assets/images/avatar/avatar-1.jpg" class="w-5 h-5 rounded-full" alt="User Profile Image" id="userProfileImg">
@@ -65,11 +65,24 @@
                                 </div>
                             </div>
                         </li>
+                        <button><i class="fa-solid fa-bars-staggered text-dark-gray hover:text-black smooth-hover-animation"></i></button>
                     </ul>
+                    
                 </div>
             </div>
         </div>
     </header>
+
+    <section class="md-hidden">
+        <div class="container ct-container mt-4 md:hidden">
+            <form action="#">
+                <div class="ct-flex-start relative">
+                    <i class="fa-solid fa-magnifying-glass text-xs absolute top-[38%] left-[2%]"></i>
+                    <input type="text" placeholder="Search..." class="py-2 px-2 pl-8 w-full bg-light-gray rounded-md ">
+                </div>
+            </form>
+        </div>
+    </section>
 
     <section>
         <!-- SEARCH STARTS -->
