@@ -2151,6 +2151,10 @@ input[type="range"]::-moz-range-thumb{
     margin-top: 3rem;
   }
 
+  .md\:mt-64 {
+    margin-top: 16rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2161,6 +2165,19 @@ input[type="range"]::-moz-range-thumb{
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+
+  .md\:gap-y-14 {
+    row-gap: 3.5rem;
   }
 
   .md\:text-4xl {

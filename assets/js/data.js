@@ -20,8 +20,8 @@ fetch("https://ke9sh1n.github.io/Shoppe/products.json")
                         </div>
                     </div>
                     <div class=" mt-6">
-                        <h3 class=" text-xl capitalize"><a href="product.html">${product.title}</a></h3>
-                        <p class=" text-xl text-accent font-medium mt-4">$ <span>${product.price}</span></p>
+                        <h3 class="text-sm md:text-xl capitalize"><a href="product.html">${product.title}</a></h3>
+                        <p class="text-xs md:text-xl text-accent font-medium mt-4">$ <span>${product.price}</span></p>
                     </div>
                 </div>
             `;
