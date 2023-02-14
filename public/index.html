@@ -73,18 +73,6 @@
         </div>
     </header>
 
-    <!-- MOBILE DISPLAY SEARCH BAR -->
-    <section class="hidden md-block">
-        <div class="container ct-container mt-4">
-            <form action="#">
-                <div class="ct-flex-start relative">
-                    <i class="fa-solid fa-magnifying-glass text-xs absolute top-[38%] left-[2%]"></i>
-                    <input type="text" placeholder="Search..." class="py-2 px-2 pl-8 w-full bg-light-gray rounded-md ">
-                </div>
-            </form>
-        </div>
-    </section>
-
     <!-- MOBILE DISPLAY NAVMENU -->
     <section class="container ct-container relative">
         <div class="overflow-hidden w-full h-0 smooth-hover-animation-mid" id="navMobile">
@@ -99,20 +87,32 @@
                 <div class="flex items-start justify-start flex-col gap-y-6 border-t border-solid border-gray w-full ">
                     <li class="mt-6">
                         <a href="account-dashboard.html">
-                            <i class="fa-solid fa-arrow-right-from-bracket w-6 mr-2"></i>
+                            <i class="fa-regular fa-user w-6 mr-2 "></i>
                             <span>my account</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <i class="fa-regular fa-user w-6 mr-2"></i>
+                            <i class="fa-solid fa-arrow-right-from-bracket w-6 mr-2"></i>
                             <span>logout</span>
                         </a>
                     </li>
                 </div>
             </ul>
 
+        </div>
+    </section>
+
+    <!-- MOBILE DISPLAY SEARCH BAR -->
+    <section class="md-hidden">
+        <div class="container ct-container mt-4">
+            <form action="#">
+                <div class="ct-flex-start relative">
+                    <i class="fa-solid fa-magnifying-glass text-xs absolute top-[38%] left-[2%]"></i>
+                    <input type="text" placeholder="Search..." class="py-2 px-2 pl-8 w-full bg-light-gray rounded-md ">
+                </div>
+            </form>
         </div>
     </section>
 
@@ -317,10 +317,11 @@
                             <li><a class=" uppercase hover:text-black smooth-hover-animation" href="#">SHIPPING AND RETURNS</a></li>
                         </ul>
                     </nav>
-                    <div class="mt-6 flex gap-x-8 md:hidden">
-                        <span class="font-bold">Follow Us</span>
-                        <ul class="ct-flex-start gap-x-7">
-                            <li><a href="#" class="">
+                    <div class="mt-6 flex gap-x-20 md:hidden relative">
+                        <span class="font-bold
+                        after:absolute after:left-[25%] after:top-[50%] after:w-[3rem] after:h-[2px] after:content-[''] after:bg-black">Follow Us</span>
+                        <ul class="ct-flex-start gap-x-6">
+                            <li><a href="#">
                                 <i class="fa-brands fa-linkedin-in text-dark-gray hover:text-black smooth-hover-animation"></i>
                             </a></li>
                             <li><a href="#">
