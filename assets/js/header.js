@@ -114,3 +114,18 @@ mobileMenuBtn.addEventListener("click", ()=>{
     mobileMenu.classList.add("h-0");
   }
 })
+
+// NAV MOBILE MANU LOGIN & LOGOUT FUNCTIONALITY
+const mobileLogoutBtn = document.querySelector("#mobileLogoutBtn");
+const mobileLoginBtn = document.querySelector("#mobileLoginBtn");
+const mobileAccountList = document.querySelector("#mobileAccountList");
+
+mobileLogoutBtn.addEventListener("click", ()=>{
+  mobileAccountList.classList.add("hidden");
+  mobileLoginBtn.classList.remove("hidden");
+})
+
+mobileLoginBtn.addEventListener("click",()=>{
+  mobileAccountList.classList.remove("hidden");
+  mobileLoginBtn.classList.add("hidden");
+})

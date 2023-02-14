@@ -84,21 +84,28 @@
                 <li><a href="#">help</a></li>
                 <li><a href="contact.html">contact</a></li>
 
-                <div class="flex items-start justify-start flex-col gap-y-6 border-t border-solid border-gray w-full ">
-                    <li class="mt-6">
+                <li class="border-t border-solid border-gray w-full" >
+                    <div class="flex items-start justify-start flex-col gap-y-6" id="mobileAccountList">
+                        <div class="mt-6">
                         <a href="account-dashboard.html">
                             <i class="fa-regular fa-user w-6 mr-2 "></i>
                             <span>my account</span>
                         </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
+                    </div>
+                    <div>
+                        <button type="submit" id="mobileLogoutBtn">
                             <i class="fa-solid fa-arrow-right-from-bracket w-6 mr-2"></i>
-                            <span>logout</span>
-                        </a>
-                    </li>
-                </div>
+                            <span class=" capitalize">logout</span>
+                        </button>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <button type="submit" class="hidden" id="mobileLoginBtn">
+                        <i class="fa-solid fa-arrow-right-to-bracket w-6 mr-2"></i>
+                        <span class=" capitalize">login</span>
+                    </button>
+                </li>
             </ul>
 
         </div>
