@@ -2094,6 +2094,12 @@ input[type="range"]::-moz-range-thumb{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:ct-flex-between {
     display: flex;
