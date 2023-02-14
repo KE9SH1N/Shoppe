@@ -307,22 +307,39 @@
     </main>
 
     <footer>
-        <div class="container ct-container mt-24 md:mt-64 mb-24">
-            <div class="ct-flex-between border-t border-solid border-dark-gray">
-                <div class="w-[40%] mt-14">
+        <div class="container ct-container mt-20 md:mt-64 md:mb-24 mb-4">
+            <div class="flex flex-col-reverse md:flex-row md:ct-flex-between md:border-t md:border-solid md:border-dark-gray">
+                <div class="w-full md:w-[40%] mt-10 md:mt-14">
                     <nav>
-                        <ul class="ct-flex-between text-dark-gray">
+                        <ul class="flex flex-col md:flex-row md:ct-flex-between text-dark-gray">
                             <li><a class=" uppercase hover:text-black smooth-hover-animation" href="contact.html">CONTACT</a></li>
                             <li><a class=" uppercase hover:text-black smooth-hover-animation" href="#">TERMS OF SERVICES</a></li>
                             <li><a class=" uppercase hover:text-black smooth-hover-animation" href="#">SHIPPING AND RETURNS</a></li>
                         </ul>
                     </nav>
-                    <div class="mt-12">
+                    <div class="mt-6 flex gap-x-8 md:hidden">
+                        <span class="font-bold">Follow Us</span>
+                        <ul class="ct-flex-start gap-x-7">
+                            <li><a href="#" class="">
+                                <i class="fa-brands fa-linkedin-in text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-facebook-f text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-instagram text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-twitter text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 md:mt-12">
                         <p class="text-dark-gray"><span class="text-black">&#169 2023 kensh1n.</span> Term of use <span class="text-black">and</span> privacy policy</p>
                     </div>
                 </div>
                 <div class="mt-9">
-                    <div class="ct-flex-end border-b border-solid border-dark-gray">
+                    <div class="ct-flex-between md:ct-flex-end border-b border-solid border-dark-gray">
                         <p class="py-3 mr-32">Give an email, get the newsletter.</p>
                         <!-- <img class="block" src="../assets/images/icons/right-arrow.png" alt="Right Arrow Image"> -->
                         <a href="#">
@@ -330,7 +347,7 @@
                         </a>
 
                     </div>
-                    <div class=" mt-12">
+                    <div class=" mt-12 md:block hidden">
                         <ul class="ct-flex-end gap-x-7">
                             <li><a href="#" class="">
                                 <i class="fa-brands fa-linkedin-in text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
