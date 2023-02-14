@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                         </li>
-                        <button><i class="fa-solid fa-bars-staggered text-dark-gray hover:text-black smooth-hover-animation"></i></button>
+                        <button class="md:hidden"><i class="fa-solid fa-bars-staggered text-dark-gray hover:text-black smooth-hover-animation" id="mobileNavBtn"></i></button>
                     </ul>
                     
                 </div>
@@ -73,14 +73,43 @@
         </div>
     </header>
 
-    <section class="md-hidden">
-        <div class="container ct-container mt-4 md:hidden">
+    <section class="hidden md-block">
+        <div class="container ct-container mt-4">
             <form action="#">
                 <div class="ct-flex-start relative">
                     <i class="fa-solid fa-magnifying-glass text-xs absolute top-[38%] left-[2%]"></i>
                     <input type="text" placeholder="Search..." class="py-2 px-2 pl-8 w-full bg-light-gray rounded-md ">
                 </div>
             </form>
+        </div>
+    </section>
+
+    <section class="container ct-container relative">
+        <div class="overflow-hidden w-full h-0 transition-all duration-500" id="navMobile">
+            <ul class="w-full flex items-start justify-start flex-col gap-y-6 capitalize text-xl mt-10">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">help</a></li>
+                <li><a href="#">contact</a></li>
+
+                <div class="flex items-start justify-start flex-col gap-y-6 border-t border-solid border-gray w-full ">
+                    <li class="mt-6">
+                        <a href="#">
+                            <i class="fa-regular fa-user w-6 mr-2"></i>
+                            <span>logout</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket w-6 mr-2"></i>
+                            <span>my account</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+
         </div>
     </section>
 

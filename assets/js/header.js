@@ -79,7 +79,7 @@ function hightSlide(id, hSize) {
      }
 }
 
-// // DROPDOWN TOGGLE
+// DROPDOWN TOGGLE
 function toggleCalculatShipping(btn) {
      const calculatShippingForm = document.getElementById("calculatShippingForm");
 
@@ -93,3 +93,21 @@ function toggleCalculatShipping(btn) {
           btn.classList.add("fa-angle-down");
      }
 }
+
+
+// NAV MOBILE MANU
+
+const mobileMenu = document.querySelector("#navMobile");
+const mobileMenuBtn = document.querySelector("#mobileNavBtn");
+
+
+mobileMenuBtn.addEventListener("click", ()=>{
+  if(mobileMenu.classList.contains("h-0")){
+    mobileMenu.classList.remove("h-0");
+    mobileMenu.classList.add("h-screen");
+  }
+  else if(mobileMenu.classList.contains("h-screen")){
+    mobileMenu.classList.remove("h-screen");
+    mobileMenu.classList.add("h-0");
+  }
+})

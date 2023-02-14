@@ -928,6 +928,14 @@ input[type="range"]::-moz-range-thumb{
   right: 20%;
 }
 
+.top-\[38\%\] {
+  top: 38%;
+}
+
+.left-\[2\%\] {
+  left: 2%;
+}
+
 .top-\[50\%\] {
   top: 50%;
 }
@@ -940,64 +948,16 @@ input[type="range"]::-moz-range-thumb{
   top: 5%;
 }
 
-.top-\[45\%\] {
-  top: 45%;
+.bottom-\[100\%\] {
+  bottom: 100%;
 }
 
-.top-\[25\%\] {
-  top: 25%;
+.bottom-full {
+  bottom: 100%;
 }
 
-.left-\[10\%\] {
-  left: 10%;
-}
-
-.left-\[10px\] {
-  left: 10px;
-}
-
-.left-\[8px\] {
-  left: 8px;
-}
-
-.top-\[50px\] {
-  top: 50px;
-}
-
-.top-\[35px\] {
-  top: 35px;
-}
-
-.top-\[5px\] {
-  top: 5px;
-}
-
-.top-\[10px\] {
-  top: 10px;
-}
-
-.top-\[12px\] {
-  top: 12px;
-}
-
-.top-\[11px\] {
-  top: 11px;
-}
-
-.right-\[10px\] {
-  right: 10px;
-}
-
-.left-\[1\%\] {
-  left: 1%;
-}
-
-.left-\[2\%\] {
-  left: 2%;
-}
-
-.top-\[38\%\] {
-  top: 38%;
+.top-full {
+  top: 100%;
 }
 
 .z-\[999\] {
@@ -1159,6 +1119,14 @@ input[type="range"]::-moz-range-thumb{
   margin-bottom: 0.75rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1233,6 +1201,14 @@ input[type="range"]::-moz-range-thumb{
 
 .h-\[20px\] {
   height: 20px;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .max-h-\[45vh\] {
@@ -1327,6 +1303,18 @@ input[type="range"]::-moz-range-thumb{
   width: 33.33px;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
 .border-separate {
   border-collapse: separate;
 }
@@ -1411,6 +1399,10 @@ input[type="range"]::-moz-range-thumb{
   gap: 1rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -1471,6 +1463,11 @@ input[type="range"]::-moz-range-thumb{
   row-gap: 1.5rem;
 }
 
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
 .gap-x-40 {
   -moz-column-gap: 10rem;
        column-gap: 10rem;
@@ -1493,11 +1490,6 @@ input[type="range"]::-moz-range-thumb{
 
 .gap-y-11 {
   row-gap: 2.75rem;
-}
-
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
 }
 
 .overflow-hidden {
@@ -1618,14 +1610,14 @@ input[type="range"]::-moz-range-thumb{
   background-color: rgb(136 136 136 / var(--tw-bg-opacity));
 }
 
-.bg-dark-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(112 112 112 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 216 216 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1648,14 +1640,6 @@ input[type="range"]::-moz-range-thumb{
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .py-4 {
@@ -1728,6 +1712,11 @@ input[type="range"]::-moz-range-thumb{
   padding-bottom: 0.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1741,11 +1730,6 @@ input[type="range"]::-moz-range-thumb{
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .py-\[2px\] {
@@ -1789,20 +1773,12 @@ input[type="range"]::-moz-range-thumb{
   padding-bottom: 2.5rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
 .pl-8 {
   padding-left: 2rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-left {
@@ -1991,6 +1967,10 @@ input[type="range"]::-moz-range-thumb{
   transition-duration: 500ms;
 }
 
+.duration-\[\.5s\] {
+  transition-duration: .5s;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2154,34 +2134,6 @@ input[type="range"]::-moz-range-thumb{
 .active\:text-white:active {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:ct-flex-end {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .sm\:block {
-    display: block;
-  }
-
-  .sm\:flex {
-    display: flex;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-
-  .sm\:items-end {
-    align-items: flex-end;
-  }
-
-  .sm\:justify-end {
-    justify-content: flex-end;
-  }
 }
 
 @media (min-width: 768px) {
