@@ -33,7 +33,7 @@ html{
 
 @layer components{
     .ct-container{
-        @apply xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] xs:max-w-[425px] 2xs:max-w-[320px] mx-auto relative z-[1];
+        @apply xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] xs:max-w-[425px] 2xs:max-w-[375px] mx-auto relative z-[1];
     }
     .ct-flex-center{
         @apply flex items-center justify-center;

@@ -557,9 +557,9 @@ html{
   width: 100%;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 375px) {
   .container {
-    max-width: 320px;
+    max-width: 375px;
     padding-right: 1rem;
     padding-left: 1rem;
   }
@@ -620,9 +620,9 @@ html{
   margin-right: auto;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 375px) {
   .ct-container {
-    max-width: 320px;
+    max-width: 375px;
   }
 }
 
@@ -1189,10 +1189,6 @@ input[type="range"]::-moz-range-thumb{
 
 .h-\[20px\] {
   height: 20px;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .max-h-\[45vh\] {
