@@ -110,4 +110,7 @@ mobileMenuBtn.addEventListener("click", ()=>{
     mobileMenu.classList.remove("h-screen");
     mobileMenu.classList.add("h-0");
   }
+  else{
+    mobileMenu.classList.add("h-0");
+  }
 })

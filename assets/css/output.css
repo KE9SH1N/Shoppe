@@ -565,9 +565,9 @@ html{
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 425px) {
   .container {
-    max-width: 576px;
+    max-width: 425px;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
@@ -626,9 +626,9 @@ html{
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 425px) {
   .ct-container {
-    max-width: 414px;
+    max-width: 425px;
   }
 }
 
@@ -1189,6 +1189,10 @@ input[type="range"]::-moz-range-thumb{
 
 .h-\[20px\] {
   height: 20px;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-\[45vh\] {
