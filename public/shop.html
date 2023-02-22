@@ -149,7 +149,6 @@
                 <h3>Shopping Bag</h3>
                 <p class="text-dark-gray text-xs mt-4"><span>5</span> items</p>
             </div>
-            
 
             <div class="px-6 md:px-8 mr-4 overflow-y-scroll scrollbar max-h-[45vh]">
                 <ul>
@@ -263,13 +262,13 @@
         </div>
     </section>
 
-    <main class="mt-24">
-        <section class="container ct-container items-start ct-flex-start gap-x-4">
-            <aside class="w-[25%]">
-                <div>
+    <main class="sm:mt-24 mt-10">
+        <section class="container ct-container items-start sm:ct-flex-start flex-col gap-x-4">
+            <aside class="sm:w-[25%]">
+                <div class="text-center sm:text-start">
                     <h2 class="text-4xl font-medium capitalize">shop the latest</h2>
                 </div>
-                <div class="mt-10 relative">
+                <div class="mt-10 relative hidden sm:block">
                     <label for="searchBar"></label>
                     <input id="searchBar" type="text" class=" w-full py-3 outline-none border-b-2 border-solid border-light-gray placeholder:text-sm placeholder:text-dark-gray" placeholder="Search...">
                     <img src="../assets/images/icons/search.png" alt="Search Icon" class="absolute right-0 top-[35%]">
@@ -333,8 +332,8 @@
                     </div>
                 </div>
             </aside>
-            <div class="container ct-container w-[80%]">
-                <div class=" grid grid-cols-3 gap-y-14 gap-x-20 mt-10">
+            <div class="container ct-container sm:w-[80%] mt-20 sm:mt-0">
+                <div class=" grid grid-cols-1 sm:grid-cols-3 gap-y-14 gap-x-20 mt-10">
                     <div class="">
                         <div class="relative cursor-pointer ct-content">
                             <a href="product.html">
