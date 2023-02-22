@@ -965,16 +965,12 @@ input[type="range"]::-moz-range-thumb{
   z-index: 50;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
 .z-40 {
   z-index: 40;
 }
 
-.z-10 {
-  z-index: 10;
+.z-0 {
+  z-index: 0;
 }
 
 .col-start-3 {
@@ -1204,16 +1200,8 @@ input[type="range"]::-moz-range-thumb{
   height: 20px;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .max-h-\[45vh\] {
   max-height: 45vh;
-}
-
-.max-h-screen {
-  max-height: 100vh;
 }
 
 .w-80 {
@@ -1457,6 +1445,11 @@ input[type="range"]::-moz-range-thumb{
        column-gap: 2rem;
 }
 
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -1479,11 +1472,6 @@ input[type="range"]::-moz-range-thumb{
 
 .gap-y-11 {
   row-gap: 2.75rem;
-}
-
-.gap-x-5 {
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
 }
 
 .overflow-hidden {
@@ -1599,13 +1587,13 @@ input[type="range"]::-moz-range-thumb{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-\[\#888\] {
   --tw-bg-opacity: 1;
   background-color: rgb(136 136 136 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-opacity-50 {
@@ -2215,10 +2203,6 @@ input[type="range"]::-moz-range-thumb{
     width: 375px;
   }
 
-  .md\:w-\[40\%\] {
-    width: 40%;
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2271,61 +2255,13 @@ input[type="range"]::-moz-range-thumb{
 }
 
 @media (min-width: 1024px) {
-  .lg\:ct-flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .lg\:ct-flex-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .lg\:hidden {
-    display: none;
-  }
-
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .lg\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .lg\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .lg\:w-\[30\%\] {
-    width: 30%;
-  }
-
-  .lg\:w-\[60\%\] {
-    width: 60%;
-  }
-
-  .lg\:w-\[40\%\] {
-    width: 40%;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:w-full {
-    width: 100%;
-  }
-
-  .xl\:w-\[50\%\] {
-    width: 50%;
   }
 }
