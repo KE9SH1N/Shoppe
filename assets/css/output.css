@@ -2144,12 +2144,6 @@ input[type="range"]::-moz-range-thumb{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 425px) {
-  .xs\:flex-col {
-    flex-direction: column;
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:ct-flex-start {
     display: flex;
@@ -2165,6 +2159,10 @@ input[type="range"]::-moz-range-thumb{
     margin-top: 0px;
   }
 
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -2177,12 +2175,50 @@ input[type="range"]::-moz-range-thumb{
     width: 80%;
   }
 
+  .sm\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .sm\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .sm\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .sm\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
   .sm\:text-start {
     text-align: start;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -2191,6 +2227,12 @@ input[type="range"]::-moz-range-thumb{
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .md\:ct-flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .md\:ct-flex-end {
@@ -2223,6 +2265,10 @@ input[type="range"]::-moz-range-thumb{
     margin-top: 3.5rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2239,12 +2285,32 @@ input[type="range"]::-moz-range-thumb{
     width: 375px;
   }
 
+  .md\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .md\:w-\[75\%\] {
+    width: 75%;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:gap-y-14 {
@@ -2295,6 +2361,10 @@ input[type="range"]::-moz-range-thumb{
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
