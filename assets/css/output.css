@@ -1200,6 +1200,10 @@ input[type="range"]::-moz-range-thumb{
   height: 20px;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .max-h-\[45vh\] {
   max-height: 45vh;
 }
