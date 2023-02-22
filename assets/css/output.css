@@ -2151,6 +2151,10 @@ input[type="range"]::-moz-range-thumb{
     justify-content: flex-start;
   }
 
+  .sm\:left-\[10\%\] {
+    left: 10%;
+  }
+
   .sm\:mt-24 {
     margin-top: 6rem;
   }
@@ -2207,6 +2211,11 @@ input[type="range"]::-moz-range-thumb{
     align-items: flex-start;
   }
 
+  .sm\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+
   .sm\:text-start {
     text-align: start;
   }
@@ -2219,6 +2228,31 @@ input[type="range"]::-moz-range-thumb{
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:after\:left-\[10\%\]::after {
+    content: var(--tw-content);
+    left: 10%;
+  }
+
+  .sm\:after\:left-\[20\%\]::after {
+    content: var(--tw-content);
+    left: 20%;
+  }
+
+  .sm\:after\:left-\[15\%\]::after {
+    content: var(--tw-content);
+    left: 15%;
+  }
+
+  .sm\:after\:left-\[18\%\]::after {
+    content: var(--tw-content);
+    left: 18%;
+  }
+
+  .sm\:after\:left-\[16\%\]::after {
+    content: var(--tw-content);
+    left: 16%;
   }
 }
 
