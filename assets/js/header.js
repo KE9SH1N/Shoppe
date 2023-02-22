@@ -44,6 +44,7 @@ window.addEventListener('click', (e)=>{
 const shoppingBag = document.getElementById("shoppingBag");
 const cartToggler = document.getElementById("cartBtnToggler");
 const cartBagCross = document.getElementById("bagCrossBtn");
+const cartOverlay = document.getElementById("overlay");
 const crossBtn = document.querySelector("#crossBtn");
 const productOne = document.querySelector("#product1");
 
@@ -51,6 +52,7 @@ cartToggler.addEventListener('click', (e)=>{
   
     if(e.target.id === "cartIcon" || e.target.id === "cartBtnToggler" || e.target.id === "cartNotification"){
       shoppingBag.classList.toggle("ct-hide-bag");
+      cartOverlay.classList.remove("hidden");
     }
     else{
       shoppingBag.classList.add("ct-hide-bag");
@@ -59,10 +61,16 @@ cartToggler.addEventListener('click', (e)=>{
 
 cartBagCross.addEventListener("click", ()=>{
   shoppingBag.classList.add("ct-hide-bag");
+  cartOverlay.classList.add("hidden");
 })
 
 crossBtn.addEventListener("click",(e)=>{
   productOne.classList.add("hidden");
+})
+
+cartOverlay.addEventListener("click",(e)=>{
+  shoppingBag.classList.add("ct-hide-bag");
+  cartOverlay.classList.add("hidden");
 })
 
 
