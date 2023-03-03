@@ -8,11 +8,11 @@ const logoutMenuItem = document.querySelector("#logoutMenu");
     logoutMenuItem.addEventListener("click", ()=>{
         if(userNavIcon.classList.contains("hidden")){
             userNavIcon.classList.remove("hidden");
-            loginActiveState.classList.add("hidden");
+            loginActiveState.classList.add("md:hidden");
         }
         else{
             userNavIcon.classList.add("hidden");
-            loginActiveState.classList.remove("hidden");
+            loginActiveState.classList.remove("md:hidden");
         }
     
     })
