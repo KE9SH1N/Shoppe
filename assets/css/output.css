@@ -1134,6 +1134,10 @@ input[type="range"]::-moz-range-thumb{
   margin-bottom: 0.75rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -1400,6 +1404,10 @@ input[type="range"]::-moz-range-thumb{
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-2 {
@@ -2352,6 +2360,10 @@ input[type="range"]::-moz-range-thumb{
     margin-top: 5rem;
   }
 
+  .md\:mb-60 {
+    margin-bottom: 15rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2426,8 +2438,25 @@ input[type="range"]::-moz-range-thumb{
          column-gap: 2.5rem;
   }
 
+  .md\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .md\:rounded-none {
+    border-radius: 0px;
+  }
+
   .md\:border-t {
     border-top-width: 1px;
+  }
+
+  .md\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .md\:border-b {
+    border-bottom-width: 1px;
   }
 
   .md\:border-solid {
@@ -2443,6 +2472,15 @@ input[type="range"]::-moz-range-thumb{
     border-color: rgb(112 112 112 / var(--tw-border-opacity));
   }
 
+  .md\:border-transparent {
+    border-color: transparent;
+  }
+
+  .md\:border-light-gray {
+    --tw-border-opacity: 1;
+    border-color: rgb(239 239 239 / var(--tw-border-opacity));
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
@@ -2455,6 +2493,11 @@ input[type="range"]::-moz-range-thumb{
   .md\:px-44 {
     padding-left: 11rem;
     padding-right: 11rem;
+  }
+
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .md\:text-center {
