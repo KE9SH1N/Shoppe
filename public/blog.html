@@ -15,11 +15,11 @@
     <title>Shoppe | Blog</title>
 </head>
 <body class="font-DM font-normal text-base text-black overflow-x-hidden relative">
-    <header class="container ct-container mt-16">
-        <div class="ct-flex-between ct-flex-between py-4 border-b-2 border-solid border-light-gray">
+    <header class="container ct-container mt-4 md:mt-16">
+        <div class="ct-flex-between">
             <h1 class=" font-Stencil text-4xl uppercase text-accent"><a href="index.html">S<span class="text-black">hoppe</span></a></h1>
             <div class="ct-flex-between">
-                <nav class="w-80">
+                <nav class="w-80 md:block hidden">
                     <ul class="ct-flex-between mr-12 capitalize">
                         <li><a class="py-[26px]" href="shop.html">shop</a></li>
                         <li><a class="py-[26px]" href="blog.html">blog</a></li>
@@ -27,8 +27,8 @@
                     </ul>
                 </nav>
                 <div class="w-36">
-                    <ul class="ct-flex-between">
-                        <li>
+                    <ul class="md:ct-flex-between ct-flex-end gap-x-8">
+                        <li class="hidden md:flex">
                             <a href="#" onclick="hightSlide(searchDiv, 'h-full')"> 
                                 <!-- <img src="../assets/images/icons/search.png" alt="Search Icon"> -->
                                 <i class="fa-solid fa-magnifying-glass text-dark-gray hover:text-black smooth-hover-animation"></i>
@@ -48,7 +48,7 @@
                                 <i class="fa-regular fa-user text-dark-gray hover:text-black smooth-hover-animation"></i>
                             </a>
                         </li>
-                        <li class="" id="userLogin">
+                        <li class="hidden md:block" id="userLogin">
                             <div class="relative">
                                 <a href="#" class="flex items-center justify-center gap-1" id="accountDashboard">
                                     <img src="../assets/images/avatar/avatar-1.jpg" class="w-5 h-5 rounded-full" alt="User Profile Image" id="userProfileImg">
@@ -62,14 +62,66 @@
                                 </div>
                             </div>
                         </li>
+                        <button class="md:hidden"><i class="fa-solid fa-bars-staggered text-dark-gray hover:text-black smooth-hover-animation" id="mobileNavBtn"></i></button>
                     </ul>
+                    
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- MOBILE DISPLAY NAVMENU -->
+    <section class="container ct-container relative">
+        <div class="overflow-hidden w-full h-0 smooth-hover-animation-mid" id="navMobile">
+            <ul class="w-full flex items-start justify-start flex-col gap-y-6 capitalize text-xl mt-10">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="#">help</a></li>
+                <li><a href="contact.html">contact</a></li>
+
+                <li class="border-t border-solid border-gray w-full" >
+                    <div class="flex items-start justify-start flex-col gap-y-6" id="mobileAccountList">
+                        <div class="mt-6">
+                        <a href="account-dashboard.html">
+                            <i class="fa-regular fa-user w-6 mr-2 "></i>
+                            <span>my account</span>
+                        </a>
+                    </div>
+                    <div>
+                        <button type="submit" id="mobileLogoutBtn">
+                            <i class="fa-solid fa-arrow-right-from-bracket w-6 mr-2"></i>
+                            <span class=" capitalize">logout</span>
+                        </button>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <button type="submit" class="hidden" id="mobileLoginBtn">
+                        <i class="fa-solid fa-arrow-right-to-bracket w-6 mr-2"></i>
+                        <span class=" capitalize">login</span>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- MOBILE DISPLAY SEARCH BAR -->
+    <section class="md:hidden">
+        <div class="container ct-container mt-4">
+            <form action="#">
+                <div class="ct-flex-start relative">
+                    <i class="fa-solid fa-magnifying-glass text-xs absolute top-[38%] left-[2%]"></i>
+                    <input type="text" placeholder="Search..." class="py-2 px-2 pl-8 w-full bg-light-gray rounded-md ">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- SEARCH COMPONENT -->
     <section>
-        <!-- SEARCH STARTS -->
         <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-light-gray z-[99999]">
             <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-8 text-2xl bg-accent border border-accent py-1 px-3"><i
                         class="fa-solid fa-xmark text-white"></i></button>
@@ -80,18 +132,25 @@
         </div>
     </section>
 
-    <section class="absolute overflow-hidden ct-hide-bag top-[150px] right-0 pt-16 pb-6 border border-solid border-gray bg-white shadow-md z-50 smooth-hover-animation-mid" id="shoppingBag">
+
+    <!-- OVERLAY COMPONENT -->
+    <section id="overlay" class="hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-transparent z-40">
+        </div>
+    </section>
+
+    <!-- SHOPPING BAG SLIDER -->
+    <section class="absolute w-full md:w-[375px] overflow-hidden ct-hide-bag top-[70px] md:top-[150px] right-0 pt-16 pb-6 border border-solid border-gray bg-white shadow-md z-50 smooth-hover-animation-mid" id="shoppingBag">
         <div>
-            <div class="px-8 relative">
+            <div class="px-6 md:px-8 relative">
                 <div class="absolute -top-[80%] left-[5%] text-center w-6 h-6 border border-solid bg-accent border-gray rounded-full">
                     <i class="fa-solid fa-xmark cursor-pointer text-light-gray" id="bagCrossBtn"></i>
                 </div>
                 <h3>Shopping Bag</h3>
                 <p class="text-dark-gray text-xs mt-4"><span>5</span> items</p>
             </div>
-            
 
-            <div class="px-8 mr-4 overflow-y-scroll scrollbar max-h-[45vh]">
+            <div class="px-6 md:px-8 mr-4 overflow-y-scroll scrollbar max-h-[45vh]">
                 <ul>
                     <li class="ct-flex-between items-start py-10" id="product1">
                         <div class="grid grid-cols-2 gap-x-2">
