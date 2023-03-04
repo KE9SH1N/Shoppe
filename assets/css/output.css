@@ -2444,6 +2444,18 @@ input[type="range"]::-moz-range-thumb{
     width: 75%;
   }
 
+  .lg\:w-\[35\%\] {
+    width: 35%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2470,5 +2482,9 @@ input[type="range"]::-moz-range-thumb{
 @media (min-width: 1280px) {
   .xl\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .xl\:w-\[40\%\] {
+    width: 40%;
   }
 }
