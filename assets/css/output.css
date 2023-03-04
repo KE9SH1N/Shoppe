@@ -1724,6 +1724,16 @@ input[type="range"]::-moz-range-thumb{
   padding-bottom: 2px;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -2478,6 +2488,10 @@ input[type="range"]::-moz-range-thumb{
     width: 30%;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2502,6 +2516,14 @@ input[type="range"]::-moz-range-thumb{
 
   .lg\:text-center {
     text-align: center;
+  }
+
+  .lg\:text-start {
+    text-align: start;
+  }
+
+  .lg\:text-end {
+    text-align: end;
   }
 }
 

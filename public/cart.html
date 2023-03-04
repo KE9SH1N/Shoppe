@@ -267,7 +267,7 @@
             <div class="text-center font-medium text-4xl capitalize">
                 <h2>Shopping Cart</h2>
             </div>
-            <di v class="grid grid-cols-2 gap-x-36 mt-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-36 mt-16">
                 <div>
                     <ul>
                         <li class="ct-flex-between items-start py-10 border-b border-solid border-gray">
@@ -297,19 +297,19 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="text-end">
-                        <button type="submit" class="w-[30%] font-bold py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">update cart</button>
+                    <div class="lg:text-end text-center">
+                        <button type="submit" class="lg:w-[30%] md:w-[50%] w-full font-bold px-1 py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">update cart</button>
                     </div>
 
                     <div class="mt-16">
-                        <div class="relative ct-flex-between items-end" id="coupon">
-                            <div class="w-[60%]">
+                        <div class="relative lg:ct-flex-between items-end" id="coupon">
+                            <div class="lg:w-[60%] w-full">
                                 <label for="couponCode"></label>
                                 <input type="text" placeholder="Coupon Code" id="couponCode" class="w-full pr-6 py-4 placeholder:capitalize placeholder:text-dark-gray placeholder:text-xs border-b-2 border-solid border-light-gray outline-none">
                                 <i class=" hidden fa-regular fa-circle-xmark absolute right-[50%] top-[40%] text-accent cursor-pointer"></i>
                             </div>
-                            <div class="w-[30%]">
-                                <button type="submit" class="font-bold w-full py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">APPLY COUPON</button>
+                            <div class="text-center">
+                                <button type="submit" class="font-bold lg:w-full md:w-[50%] w-full px-2 py-4 mt-16 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">APPLY COUPON</button>
                             </div>
                         </div>
                         
