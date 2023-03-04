@@ -2301,6 +2301,10 @@ input[type="range"]::-moz-range-thumb{
     width: 75%;
   }
 
+  .md\:w-\[30\%\] {
+    width: 30%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2422,10 +2426,20 @@ input[type="range"]::-moz-range-thumb{
 }
 
 @media (min-width: 1024px) {
+  .lg\:ct-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .lg\:ct-flex-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .lg\:m-auto {
+    margin: auto;
   }
 
   .lg\:mt-0 {
@@ -2438,6 +2452,10 @@ input[type="range"]::-moz-range-thumb{
 
   .lg\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .lg\:h-\[70vh\] {
+    height: 70vh;
   }
 
   .lg\:w-\[75\%\] {
@@ -2454,6 +2472,10 @@ input[type="range"]::-moz-range-thumb{
 
   .lg\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .lg\:w-\[30\%\] {
+    width: 30%;
   }
 
   .lg\:grid-cols-2 {
@@ -2476,6 +2498,10 @@ input[type="range"]::-moz-range-thumb{
   .lg\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .lg\:text-center {
+    text-align: center;
   }
 }
 
