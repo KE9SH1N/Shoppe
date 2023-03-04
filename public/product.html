@@ -262,21 +262,21 @@
         </div>
     </section>
 
-    <main class="mt-16">
-        <section class="container ct-container mt-16">
-            <div class="flex flex-row gap-x-20">
-                <div class="w-[60%] ct-flex-start gap-x-10">
-                    <ul class="flex flex-col gap-y-10">
-                        <li><img src="../assets/images/product-details/img-1.jpg" class="h-[120px] w-[120px] rounded-lg small-img cursor-pointer object-cover" alt="Product Details Image"></li>
-                        <li><img src="../assets/images/product-details/img-2.jpg" class="h-[120px] w-[120px] rounded-lg small-img cursor-pointer object-cover" alt="Product Details Image"></li>
-                        <li><img src="../assets/images/product-details/img-3.jpg" class="h-[120px] w-[120px] rounded-lg small-img cursor-pointer object-cover" alt="Product Details Image"></li>
-                        <li><img src="../assets/images/product-details/img-4.jpg" class="h-[120px] w-[120px] rounded-lg small-img cursor-pointer object-cover" alt="Product Details Image"></li>
+    <main class="lg:mt-16">
+        <section class="container ct-container lg:mt-16">
+            <div class="flex lg:flex-row flex-col lg:gap-x-20 lg:gap-y-0 gap-y-20">
+                <div class="lg:w-[60%] w-full flex flex-col-reverse lg:flex-row lg:ct-flex-start gap-x-10">
+                    <ul class="flex lg:flex-col flex-row lg:gap-y-10 gap-x-2 mt-10 lg:mt-0">
+                        <li><img src="../assets/images/product-details/img-1.jpg" class="lg:h-[120px] lg:w-[120px] rounded-lg small-img cursor-pointer object-cover" alt="Product Details Image"></li>
+                        <li><img src="../assets/images/product-details/img-2.jpg" class="lg:h-[120px] lg:w-[120px] rounded-lg small-img cursor-pointer object-cover" alt="Product Details Image"></li>
+                        <li><img src="../assets/images/product-details/img-3.jpg" class="lg:h-[120px] lg:w-[120px] rounded-lg small-img cursor-pointer object-cover" alt="Product Details Image"></li>
+                        <li><img src="../assets/images/product-details/img-4.jpg" class="lg:h-[120px] lg:w-[120px] rounded-lg small-img cursor-pointer object-cover" alt="Product Details Image"></li>
                     </ul>
-                    <div class="w-[540px] h-[600px] overflow-hidden object-contain">
+                    <div class="lg:w-[540px] lg:h-[600px] overflow-hidden object-contain mt-10 lg:mt-0">
                         <img class="w-full rounded-lg object-cover" src="../assets/images/product-details/Img 01.png" id="largeImg" alt="product details big image">
                     </div>
                 </div>
-                <aside class="w-[40%]">
+                <aside class="lg:w-[40%] w-full">
                     <div>
                         <h2 class="text-2xl">Lira Earrings</h2>
                         <p class="mt-6 text-xl text-accent">$<span>20,00</span></p>
@@ -299,13 +299,11 @@
                             <button
                                 type="submit" class="py-4 pl-3" id="minusQuantity">-</button>
                             <span class="py-4 font-bold text-accent" id="quantity">01</span>
-                            <button 
-                            type="submit" class="py-4 pr-3" id="plusQuantity">+</button>
+                            <button type="submit" class="py-4 pr-3" id="plusQuantity">+</button>
                         </div>
-                        <button 
-                            
+                        <button
                             type="submit" id="addToCart"
-                            class="block font-bold px-32 py-4 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">
+                            class="block font-bold w-[60%] py-4 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">
                             add to cart
                         </button>
                     </div>
@@ -330,7 +328,7 @@
         </section>
         <section class="container ct-container mt-16 ">
             <nav class="border-b border-solid border-light-gray" id="productDetails">
-                <ul class="ct-flex-start gap-x-24 capitalize text-xl text-dark-gray" id="list">
+                <ul class="ct-flex-start lg:gap-x-24 gap-x-4 capitalize lg:text-xl text-dark-gray" id="list">
                     <li><button role="tab" aria-selected="true" aria-controls="description" id="des" class="py-5 border-b-2 border-solid border-transparent hover:text-black smooth-hover-animation capitalize ct-active">description</button></li>
                     <li><button role="tab" aria-selected="false" aria-controls="information" id="info" class="py-5 border-b-2 border-solid border-transparent hover:text-black smooth-hover-animation capitalize">Aditional information</button></li>
                     <li><button role="tab" aria-selected="false" aria-controls="review" id="rev" class="py-5 border-b-2 border-solid border-transparent hover:text-black smooth-hover-animation capitalize">review<span>(0)</span></button></li>
@@ -349,8 +347,8 @@
                 </ul>
             </div>
             <div class="mt-10 hidden section-panel" id="review">
-                <div class="ct-flex-start items-start gap-x-20">
-                    <div class="w-[50%]">
+                <div class="ct-flex-start lg:flex-row flex flex-col items-start gap-x-20">
+                    <div class="lg:w-[50%] w-full">
                         <h3 class="text-xl">2 Reviews for lira earings</h3>
                         <div class="mt-16">
                             <div>
@@ -387,7 +385,7 @@
                         </div>
                     </div>
 
-                    <div class="w-[50%]">
+                    <div class="lg:w-[50%] w-full">
                         <div>
                             <h3 class="mb-3 text-xl capitalize">Add a review</h3>
                             <span class="text-xs text-dark-gray">Your email address will not be published. Required fields are marked *</span>
@@ -442,7 +440,7 @@
 
                                 <button 
                                     type="submit"
-                                    class=" mt-12 block font-bold px-8 py-4 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">
+                                    class=" mt-12 block font-bold w-full md:w-[50%] lg:w-[30%] py-4 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">
                                     submit
                                 </button>
 
@@ -456,7 +454,7 @@
             <div class="ct-flex-between">
                 <h2 class="text-2xl capitalize">similar items</h2>
             </div>
-            <div class="grid grid-cols-3 gap-y-14 gap-x-20 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-20 mt-12">
                 <div class="">
                     <div class="relative cursor-pointer ct-content">
                         <a href="product.html">
