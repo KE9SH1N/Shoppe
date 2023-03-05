@@ -2154,6 +2154,18 @@ input[type="range"]::-moz-range-thumb{
     width: 50%;
   }
 
+  .sm\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .sm\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2558,10 +2570,23 @@ input[type="range"]::-moz-range-thumb{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
   .xl\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .xl\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .xl\:w-\[45\%\] {
+    width: 45%;
   }
 }
