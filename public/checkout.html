@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shoppe an E-commerce jewellery website">
+
+    <!-- FONT AWESOME CDN LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../assets/css/output.css">
+
+    <title>Shoppe | Checkout</title>
+</head>
+<body class="font-DM font-normal text-base text-black overflow-x-hidden relative">
+    <header class="container ct-container mt-4 md:mt-16">
+        <div class="ct-flex-between">
+            <h1 class=" font-Stencil text-4xl uppercase text-accent"><a href="index.html">S<span class="text-black">hoppe</span></a></h1>
+            <div class="ct-flex-between">
+                <nav class="w-80 md:block hidden">
+                    <ul class="ct-flex-between mr-12 capitalize">
+                        <li><a class="py-[26px]" href="shop.html">shop</a></li>
+                        <li><a class="py-[26px]" href="blog.html">blog</a></li>
+                        <li><a class="py-[26px]" href="about.html">our story</a></li>
+                    </ul>
+                </nav>
+                <div class="w-36">
+                    <ul class="md:ct-flex-between ct-flex-end gap-x-8">
+                        <li class="hidden md:flex">
+                            <a href="#" onclick="hightSlide(searchDiv, 'h-full')"> 
+                                <!-- <img src="../assets/images/icons/search.png" alt="Search Icon"> -->
+                                <i class="fa-solid fa-magnifying-glass text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a>
+                        </li>
+                        <li id="cartBtnToggler">
+                            <button type="submit" class="relative">
+                                <i class="fa-solid fa-cart-shopping text-dark-gray hover:text-black smooth-hover-animation" id="cartIcon"></i>
+                                <p id="cartNotification" class="absolute -top-[50%] -right-[60%] bg-accent border border-solid border-light-gray w-5 h-5 ct-flex-center rounded-full text-[10px] font-semibold text-white ">
+                                    15
+                                </p>
+                            </button>
+                        </li>
+                        <li class="hidden" id="userIcon" >
+                            <a href="account.html">
+                                <!-- <img src="../assets/images/icons/user.png" alt="User Icon"> -->
+                                <i class="fa-regular fa-user text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a>
+                        </li>
+                        <li class="hidden md:block" id="userLogin">
+                            <div class="relative">
+                                <a href="#" class="flex items-center justify-center gap-1" id="accountDashboard">
+                                    <img src="../assets/images/avatar/avatar-1.jpg" class="w-5 h-5 rounded-full" alt="User Profile Image" id="userProfileImg">
+                                    <i class="fa-solid fa-angle-down text-xs hover:text-accent smooth-hover-animation" id="menuOn"></i>
+                                </a>
+                                <div class="absolute w-[150px] top-[130%] right-0 bg-light-gray rounded-md z-[999] overflow-hidden shadow-lg hidden" id="dashboardMenu">
+                                    <ul class="flex items-start justify-start flex-col text-black">
+                                        <a href="account-dashboard.html" class="w-full" ><li class="w-full text-left hover:bg-accent hover:text-white p-2 cursor-pointer">My Account</li></a>
+                                        <button type="submit" class="w-full"><li class="w-full text-left hover:bg-accent hover:text-white p-2 cursor-pointer" id="logoutMenu"> Logout</li></button>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <button class="md:hidden"><i class="fa-solid fa-bars-staggered text-dark-gray hover:text-black smooth-hover-animation" id="mobileNavBtn"></i></button>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE DISPLAY NAVMENU -->
+    <section class="container ct-container relative">
+        <div class="overflow-hidden w-full h-0 smooth-hover-animation-mid" id="navMobile">
+            <ul class="w-full flex items-start justify-start flex-col gap-y-6 capitalize text-xl mt-10">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="#">help</a></li>
+                <li><a href="contact.html">contact</a></li>
+
+                <li class="border-t border-solid border-gray w-full" >
+                    <div class="flex items-start justify-start flex-col gap-y-6" id="mobileAccountList">
+                        <div class="mt-6">
+                        <a href="account-dashboard.html">
+                            <i class="fa-regular fa-user w-6 mr-2 "></i>
+                            <span>my account</span>
+                        </a>
+                    </div>
+                    <div>
+                        <button type="submit" id="mobileLogoutBtn">
+                            <i class="fa-solid fa-arrow-right-from-bracket w-6 mr-2"></i>
+                            <span class=" capitalize">logout</span>
+                        </button>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <button type="submit" class="hidden" id="mobileLoginBtn">
+                        <i class="fa-solid fa-arrow-right-to-bracket w-6 mr-2"></i>
+                        <span class=" capitalize">login</span>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- MOBILE DISPLAY SEARCH BAR -->
+    <section class="md:hidden">
+        <div class="container ct-container mt-4">
+            <form action="#">
+                <div class="ct-flex-start relative">
+                    <i class="fa-solid fa-magnifying-glass text-xs absolute top-[38%] left-[2%]"></i>
+                    <input type="text" placeholder="Search..." class="py-2 px-2 pl-8 w-full bg-light-gray rounded-md ">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- SEARCH COMPONENT -->
+    <section>
+        <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-light-gray z-[99999]">
+            <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-8 text-2xl bg-accent border border-accent py-1 px-3"><i
+                        class="fa-solid fa-xmark text-white"></i></button>
+            <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
+                <input type="text" placeholder="type keyword(s) here" class="w-full leading-[3.75rem] text-4xl text-center font-light py-1 border-b-2 border-accent focus:outline-none placeholder:capitalize">
+                <button class="absolute right-0 top-[20%] w-12 h-12 bg-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- OVERLAY COMPONENT -->
+    <section id="overlay" class="hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-transparent z-40">
+        </div>
+    </section>
+
+    <!-- SHOPPING BAG SLIDER -->
+    <section class="absolute w-full md:w-[375px] overflow-hidden ct-hide-bag top-[70px] md:top-[150px] right-0 pt-16 pb-6 border border-solid border-gray bg-white shadow-md z-50 smooth-hover-animation-mid" id="shoppingBag">
+        <div>
+            <div class="px-6 md:px-8 relative">
+                <div class="absolute -top-[80%] left-[5%] text-center w-6 h-6 border border-solid bg-accent border-gray rounded-full">
+                    <i class="fa-solid fa-xmark cursor-pointer text-light-gray" id="bagCrossBtn"></i>
+                </div>
+                <h3>Shopping Bag</h3>
+                <p class="text-dark-gray text-xs mt-4"><span>5</span> items</p>
+            </div>
+
+            <div class="px-6 md:px-8 mr-4 overflow-y-scroll scrollbar max-h-[45vh]">
+                <ul>
+                    <li class="ct-flex-between items-start py-10" id="product1">
+                        <div class="grid grid-cols-2 gap-x-2">
+                            <div class="w-[136px] h-[136px]">
+                                <img src="../assets/images/products/Img 01.webp" class="w-full" alt="Product image 3">
+                            </div>
+                            <div class="flex flex-col items-start justify-between">
+                                <div>
+                                    <h3>Lira Earrings</h3>
+                                    <p class="text-dark-gray">Black / Medium</p>
+                                    <p>$<span>20,00</span></p>
+                                </div>
+                                <div class="grid grid-cols-3 w-1/2 border border-solid border-light-gray rounded-md bg-light-gray gap-x-2">
+                                    <button class="py-1 pl-1" id="minusQuantity">-</button>
+                                    <span class="py-1 text-accent" id="quantity">01</span>
+                                    <button class="py-1 pr-1" id="plusQuantity">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-xmark cursor-pointer" id="crossBtn"></i>
+                        </div>
+                    </li>
+
+                    <li class="ct-flex-between items-start py-10">
+                        <div class="grid grid-cols-2 gap-x-2">
+                            <div class="w-[136px] h-[136px]">
+                                <img src="../assets/images/products/Img 01.webp" class="w-full" alt="Product image 3">
+                            </div>
+                            <div class="flex flex-col items-start justify-between">
+                                <div>
+                                    <h3>Lira Earrings</h3>
+                                    <p class="text-dark-gray">Black / Medium</p>
+                                    <p>$<span>20,00</span></p>
+                                </div>
+                                <div class="grid grid-cols-3 w-1/2 border border-solid border-light-gray rounded-md bg-light-gray gap-x-2">
+                                    <button class="py-1 pl-1" id="minusQuantity">-</button>
+                                    <span class="py-1 text-accent" id="quantity">01</span>
+                                    <button class="py-1 pr-1" id="plusQuantity">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-xmark cursor-pointer"></i>
+                        </div>
+                    </li>
+
+                    <li class="ct-flex-between items-start py-10">
+                        <div class="grid grid-cols-2 gap-x-2">
+                            <div class="w-[136px] h-[136px]">
+                                <img src="../assets/images/products/Img 01.webp" class="w-full" alt="Product image 3">
+                            </div>
+                            <div class="flex flex-col items-start justify-between">
+                                <div>
+                                    <h3>Lira Earrings</h3>
+                                    <p class="text-dark-gray">Black / Medium</p>
+                                    <p>$<span>20,00</span></p>
+                                </div>
+                                <div class="grid grid-cols-3 w-1/2 border border-solid border-light-gray rounded-md bg-light-gray gap-x-2">
+                                    <button class="py-1 pl-1" id="minusQuantity">-</button>
+                                    <span class="py-1 text-accent" id="quantity">01</span>
+                                    <button class="py-1 pr-1" id="plusQuantity">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-xmark cursor-pointer"></i>
+                        </div>
+                    </li>
+
+
+                    <li class="ct-flex-between items-start py-10">
+                        <div class="grid grid-cols-2 gap-x-2">
+                            <div class="w-[136px] h-[136px]">
+                                <img src="../assets/images/products/Img 01.webp" class="w-full" alt="Product image 3">
+                            </div>
+                            <div class="flex flex-col items-start justify-between">
+                                <div>
+                                    <h3>Lira Earrings</h3>
+                                    <p class="text-dark-gray">Black / Medium</p>
+                                    <p>$<span>20,00</span></p>
+                                </div>
+                                <div class="grid grid-cols-3 w-1/2 border border-solid border-light-gray rounded-md bg-light-gray gap-x-2">
+                                    <button class="py-1 pl-1" id="minusQuantity">-</button>
+                                    <span class="py-1 text-accent" id="quantity">01</span>
+                                    <button class="py-1 pr-1" id="plusQuantity">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-xmark cursor-pointer"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="px-8 pt-5 border-t-2 border-solid border-gray mt-9 flex flex-col gap-4">
+                <div class="ct-flex-between">
+                    <p>Subtotal ( <span>5</span> items)</p>
+                    <p>$ <span>100,00</span></p>
+                </div>
+                <div class="text-center">
+                    <a href="cart.html" 
+                        class="font-bold block w-full py-4 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">
+                        view cart
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="sm:mt-20 mt-10">
+        <div class="container ct-container mt-24 mb-56">
+            <div class="text-center font-medium text-4xl capitalize">
+                <h2>Checkout</h2>
+            </div>
+
+            <div class="mt-16 flex flex-col gap-y-4">
+                <p class="text-gray">Returning customer?<a href="#" class="text-black">Click here to login</a></p>
+                <p class="text-gray">Have a coupon?<a href="#" class="text-black">Click here to enter your code</a></p>
+                <div class="w-[40%] p-6 border border-solid border-gray">
+                    <p class="text-gray">If you have a coupon code, please apply it below.</p>
+
+                    <div class="relative mt-10" id="coupon">
+                        <div class="w-full flex flex-row">
+                            <label for="couponCode"></label>
+                            <input type="text" placeholder="Coupon Code" id="couponCode" class="w-[60%] placeholder:capitalize placeholder:text-dark-gray placeholder:text-xs border-b-2 border-solid border-light-gray outline-none">
+                            <i class=" hidden fa-regular fa-circle-xmark absolute right-[50%] top-[40%] text-accent cursor-pointer"></i>
+                            <div class="text-center ml-4">
+                                <button type="submit" class="font-bold lg:w-full md:w-[50%] w-full px-2 py-3 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">APPLY COUPON</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="container ct-container mt-20 md:mt-24 md:mb-24 mb-4">
+            <div class="flex flex-col-reverse md:flex-row md:ct-flex-between md:border-t md:border-solid md:border-dark-gray">
+                <div class="mt-10 md:mt-14">
+                    <nav>
+                        <ul class="flex flex-col lg:flex-row lg:ct-flex-between gap-x-5 text-dark-gray">
+                            <li><a class=" uppercase hover:text-black smooth-hover-animation" href="contact.html">CONTACT</a></li>
+                            <li><a class=" uppercase hover:text-black smooth-hover-animation" href="#">TERMS OF SERVICES</a></li>
+                            <li><a class=" uppercase hover:text-black smooth-hover-animation" href="#">SHIPPING AND RETURNS</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mt-6 flex gap-x-20 md:hidden relative">
+                        <span class="font-bold after:absolute after:left-[25%] sm:after:left-[16%] after:top-[50%] after:w-[3rem] after:h-[2px] after:content-[''] after:bg-black">Follow Us
+                        </span>
+                        <ul class="ct-flex-start gap-x-6 ">
+                            <li><a href="#">
+                                <i class="fa-brands fa-linkedin-in text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-facebook-f text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-instagram text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-twitter text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 md:mt-12">
+                        <p class="text-dark-gray"><span class="text-black">&#169 2023 kensh1n.</span> Term of use <span class="text-black">and</span> privacy policy</p>
+                    </div>
+                </div>
+                <div class="mt-9">
+                    <div class="ct-flex-between md:ct-flex-end border-b border-solid border-dark-gray">
+                        <p class="py-3 mr-32">Give an email, get the newsletter.</p>
+                        <!-- <img class="block" src="../assets/images/icons/right-arrow.png" alt="Right Arrow Image"> -->
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-long text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                        </a>
+
+                    </div>
+                    <div class=" mt-12 md:block hidden">
+                        <ul class="ct-flex-end gap-x-7">
+                            <li><a href="#" class="">
+                                <i class="fa-brands fa-linkedin-in text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-facebook-f text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-instagram text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-brands fa-twitter text-xl text-dark-gray hover:text-black smooth-hover-animation"></i>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </footer>
+
+    
+    
+    <!-- CUSTOM JS  -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/header.js"></script>
+
+</body>
+</html>
