@@ -262,17 +262,17 @@
         </div>
     </section>
 
-    <main class="sm:mt-20 mt-10">
-        <div class="container ct-container mt-24 mb-56">
+    <main class="sm:mt-20 container ct-container mt-24 mb-56">
+        <section>
             <div class="text-center font-medium text-4xl capitalize">
                 <h2>Checkout</h2>
             </div>
 
             <div class="mt-16 flex flex-col gap-y-4">
-                <p class="text-gray">Returning customer?<a href="#" class="text-black">Click here to login</a></p>
-                <p class="text-gray">Have a coupon?<a href="#" class="text-black">Click here to enter your code</a></p>
+                <p class="text-dark-gray">Returning customer?<a href="#" class="text-black">Click here to login</a></p>
+                <p class="text-dark-gray">Have a coupon?<a href="#" class="text-black">Click here to enter your code</a></p>
                 <div class="w-[40%] p-6 border border-solid border-gray">
-                    <p class="text-gray">If you have a coupon code, please apply it below.</p>
+                    <p class="text-dark-gray">If you have a coupon code, please apply it below.</p>
 
                     <div class="relative mt-10" id="coupon">
                         <div class="w-full flex flex-row">
@@ -287,8 +287,169 @@
                     </div>
                 </div>
             </div>
-            
-        </div>
+        </section>
+        <section>
+            <div class="section-panel mt-10" id="address">
+                <div class="mt-11 grid-cols-1 grid lg:grid-cols-2 gap-x-20">
+                    <address class="not-italic">
+                            <h3 class="text-xl capitalize">Billing Details</h3>
+                            <div class="hidden">
+                                <button role="tab" aria-selected="true" aria-controls="addressDetails" id="detailsAddress" class="py-5 capitalize text-accent">add</button>
+                                <p class="text-dark-gray capitalize">You have not set up this type of address yet.</p>
+                            </div>
+                            <div class="mt-6">
+                                <form action="#" id="billingAddressForm">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
+                                        <div class="relative" id="billingFirstName">
+                                            <label for="bFirstName"></label>
+                                            <input type="text" oninput="inputValue(billingFirstName)" placeholder="first name *" id="bFirstName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                        </div>
+                                        <div class="relative" id="billingLastName">
+                                            <label for="bLastName"></label>
+                                            <input type="text" oninput="inputValue(billingLastName)" placeholder="last name *" id="bLastName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative md:col-start-3 md:col-end-1" id="billingCompanyName">
+                                            <label for="companyName"></label>
+                                            <input type="text" oninput="inputValue(billingCompanyName)" placeholder="company name *" id="companyName" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="md:col-start-3 md:col-end-1">
+                                            <label for="country"></label>
+                                            <select name="shop" id="country" class="w-full py-4 border-b border-solid border-light-gray rounded-md text-sm text-dark-gray capitalize">
+                                                <option value="shop by">Country</option>
+                                                <option value="saab">bangladesh</option>
+                                                <option value="mercedes">usa</option>
+                                                <option value="audi">Soudi Arabia</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="relative md:col-start-3 md:col-end-1" id="billingStreet">
+                                            <label for="streetAddress"></label>
+                                            <input type="text" oninput="inputValue(billingStreet)" placeholder="street address *" id="streetAddress" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative md:col-start-3 md:col-end-1" id="billingPostcode">
+                                            <label for="zip"></label>
+                                            <input type="text" oninput="inputValue(billingPostcode)" placeholder="postcode / zip *" id="zip" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative md:col-start-3 md:col-end-1" id="billingCity">
+                                            <label for="town"></label>
+                                            <input type="text" oninput="inputValue(billingCity)" placeholder="town / city *" id="town" class="w-full block pr-6 py-3 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none " required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative md:col-start-3 md:col-end-1" id="billingPhone">
+                                            <label for="contact"></label>
+                                            <input type="tel" oninput="inputValue(billingPhone)" placeholder="phone *" id="contact" class="w-full pr-6 py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative md:col-start-3 md:col-end-1" id="billingEmail">
+                                            <label for="bEmail"></label>
+                                            <input type="email" oninput="inputValue(billingEmail)" placeholder="email *" id="bEmail" class="w-full block pr-6 py-4 placeholder:capitalize placeholder:text-dark-gray border-b-2 border-solid border-light-gray outline-none" required>
+                                            <i class="hidden fa-regular fa-circle-xmark absolute right-0 top-[40%] hover:text-accent text-black smooth-hover-animation cursor-pointer"></i>
+                                        </div>
+
+                                        <div class="relative md:col-start-3 md:col-end-1">
+                                            <input type="checkbox" id="createAccountChkBox">
+                                            <label for="createAccountChkBox">Create an account?</label>
+                                        </div>
+                                        <div class="relative md:col-start-3 md:col-end-1">
+                                            <input type="checkbox" id="shippingAddressChkBox">
+                                            <label for="shippingAddressChkBox">Ship to a different address?</label>
+                                        </div>
+                                        <div class="relative md:col-start-3 md:col-end-1">
+                                            <label for="orderNote"></label>
+                                            <input type="text" placeholder="order note" id="orderNote" class="w-full py-3 placeholder:capitalize placeholder:text-dark-gray placeholder:text-xs border-b-2 border-solid border-light-gray outline-none">
+                                            <i class=" hidden fa-regular fa-circle-xmark absolute right-[50%] top-[40%] text-accent cursor-pointer"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                    </address>
+                    <div class="not-italic mt-20 lg:mt-0">
+                        <h3 class="text-xl capitalize">Your Order</h3>
+                        <div class="w-full mt-9 bg-light-gray">
+                            <table class="w-full uppercase border-separate lg:py-6 lg:px-14 p-5 border-spacing-0">
+                                    <thead class="">
+                                        <tr class="uppercase ">
+                                            <th class="py-4 text-start border-b border-solid border-gray">product</th>
+                                            <th class="py-4 text-end border-b border-solid border-gray">total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-dark-gray">
+                                            <td class="py-3 ">Lira Earrings </td>
+                                            <td class="py-3 text-end">$<span>64</span> </td>
+                                        </tr>
+                                        <tr class="text-dark-gray">
+                                            <td class="py-3">Ollie Earrings </td>
+                                            <td class="py-3 text-end">$<span>10</span> </td>
+                                        </tr>
+                                        <tr class="text-dark-gray">
+                                            <td class="py-3">Kaede Hair Pin </td>
+                                            <td class="py-3 text-end">$<span>10</span> </td>
+                                        </tr>
+
+                                        <tr class="">
+                                            <td class="py-4 border-b border-solid border-gray">SUBTOTAL</td> 
+                                            <td class="py-4 text-end border-b border-solid border-gray">$<span>85</span></td>
+                                        </tr>
+
+                                        <tr class="">
+                                            <td class="py-4 border-b border-solid border-gray">SHIPPING</td>
+                                            <td class="py-4 text-end border-b border-solid border-gray">Free shipping</td>
+                                        </tr>
+
+                                        <tr class="font-bold">
+                                            <td class="py-4">TOTAL</td>
+                                            <td class="py-4 text-end">$<span>85</span></td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+
+                            <div class="lg:py-6 lg:px-14 p-5">
+                                <form action="#">
+                                    <div>
+                                        <input type="checkbox" id="directBank">
+                                        <label for="directBank">Direct bank transfer</label>
+                                    </div>
+                                    <p class="text-dark-gray text-xs mt-5">
+                                        Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account
+                                    </p>
+                                    <div class="mt-5">
+                                        <input type="checkbox" id="checkPay">
+                                        <label for="checkPay">Check payments</label>
+                                    </div>
+
+                                    <div class="mt-5">
+                                        <input type="checkbox" id="cashPay">
+                                        <label for="cashPay">Cash on delivery</label>
+                                    </div>
+
+                                    <div class="mt-5">
+                                        <input type="checkbox" id="paypal">
+                                        <label for="paypal">PayPal</label>
+                                        <i class="fa-brands fa-paypal text-sm"></i>
+                                    </div>
+
+                                    <div class="mt-11 text-center">
+                                        <button type="submit" class="w-full font-bold px-1 py-4 uppercase border-2 border-solid border-dark-gray rounded-[4px] hover:bg-black hover:text-white hover:border-black active:bg-black active:text-white active:border-black smooth-hover-animation-mid">place order</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
