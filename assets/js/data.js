@@ -16,7 +16,7 @@ fetch("https://ke9sh1n.github.io/Shoppe/products.json")
                             <img class="" src="${product.image}" alt="${product.image}">
                         </a>
                         <div class="overlay absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 overflow-hidden w-full h-0 transition-all duration-500 ease-in rounded-b-lg">
-                            <button type="submit" class="text-black font-bold absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center uppercase">add to cart</button>
+                            <button type="submit" class="text-black font-bold absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-center uppercase" id="addCartBtn">add to cart</button>
                         </div>
                     </div>
                     <div class=" mt-6">
